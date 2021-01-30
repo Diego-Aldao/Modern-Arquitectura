@@ -27,7 +27,7 @@ img {
   width: 100%;
 }
 .oculto {
-  display: none !important;
+  display: none;
 }
 
 //NAV PRINCIPAL
@@ -104,11 +104,38 @@ img {
 .swiper-container {
   width: 100%;
   height: calc(100vh - 70px);
+  .swiper-button-white {
+    display: none;
+  }
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
+  @include flexbox(row, center, flex-end);
+  .contenido-slider {
+    background: rgb(241, 241, 241);
+    padding: 40px 20px 60px;
+    width: 80%;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  .mini-titulo {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+  .mini-sub {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .mini-texto {
+    font-size: 0.7rem;
+  }
 }
 .slide-01 {
   background: red;
@@ -118,4 +145,51 @@ img {
 }
 .slide-03 {
   background: green;
+}
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+@media (min-width: 768px) {
+  .header-principal {
+    margin-bottom: 100px;
+    overflow-y: visible;
+    padding-bottom: 100px !important;
+    .swiper-pagination {
+      display: none;
+    }
+    .swiper-button-white {
+      display: block;
+      color: white;
+      top: 35%;
+      padding: 25px;
+      font-size: 0.5rem;
+      @include flexbox(row, center, center);
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 1.5rem;
+    }
+  }
+  .swiper-slide {
+    .contenido-slider {
+      margin-bottom: -40px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .swiper-container {
+    padding: 0px 80px 100px !important;
+    .swiper-button-white {
+      padding: 35px;
+      background: white;
+      color: black;
+    }
+    .swiper-button-next {
+      margin-right: 35px;
+    }
+    .swiper-button-prev {
+      margin-left: 35px;
+    }
+  }
 }
