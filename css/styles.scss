@@ -1,5 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 
-:root{
-    $fuente-principal: 'Poppins', sans-serif;
+$fuente-principal: "Poppins", sans-serif;
+
+// #f6f7f8 bg-secundario
+// rgba(191,191,191,0.3) difuminados
+
+//GENERALES
+@mixin flexbox($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $fuente-principal;
+}
+img {
+  width: 100%;
+}
+.oculto {
+  display: none !important;
+}
+
+//NAV PRINCIPAL
+.nav-principal {
+  height: 70px;
+  padding: 0px 15px;
+  @include flexbox(row, flex-start, center);
+  .logo {
+    background: aqua;
+    width: 40%;
+    max-width: 116px;
+    height: 70%;
+  }
+  .contenido {
+    width: calc(100% - 116px);
+    height: 100%;
+    @include flexbox(row, flex-end, center);
+  }
+  .menu-mobile {
+    list-style-type: none;
+    @include flexbox(row, space-between, center);
+    width: 75%;
+    max-width: 150px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .item-menu-mobile {
+    @include flexbox(column, center, center);
+    width: 25px;
+    height: 100%;
+  }
+  .hamburguesa {
+    background: black;
+    width: 85%;
+    height: 3px;
+    margin: 2px;
+  }
+}
+@media (min-width: 768px) {
+  .nav-principal {
+    height: 85px;
+  }
+  .contenido {
+    .menu-mobile {
+      display: none;
+    }
+    .oculto {
+      @include flexbox(row, flex-end, center);
+      width: calc(100%);
+      height: 100%;
+    }
+    .item-menu-desktop {
+      list-style-type: none;
+      margin-left: 20px;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+    .font-aw {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-principal {
+    padding: 0px 80px;
+  }
+}
+
+//SWIPER HEADER
+.swiper-container {
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.slide-01 {
+  background: red;
+}
+.slide-02 {
+  background: blue;
+}
+.slide-03 {
+  background: green;
 }
