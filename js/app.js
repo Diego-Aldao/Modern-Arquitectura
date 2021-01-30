@@ -16,3 +16,7 @@ var swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
   });
+  var swiper = new Swiper('.swiper-container-dos', {
+      autoplay: true,
+      speed: 1000,
+  });

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 $fuente-principal: "Poppins", sans-serif;
 
@@ -12,20 +12,30 @@ $fuente-principal: "Poppins", sans-serif;
   justify-content: $justify;
   align-items: $align;
 }
+
 body {
   width: 100%;
   overflow-x: hidden;
   min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: $fuente-principal;
 }
+
 img {
   width: 100%;
 }
+
+.contenedor-gral {
+  padding: 100px 15px 15px;
+}
+
 .oculto {
   display: none;
 }
@@ -192,4 +202,89 @@ img {
       margin-left: 35px;
     }
   }
+}
+
+//INICIO CONTENIDO PRINCIPAL
+.contenido-principal {
+  background: #f6f7f8;
+}
+.header-secciones {
+  margin-bottom: 30px;
+  .sub-textos {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .titulos-principales {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+}
+
+.pie-titulos {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  line-height: 2;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.textos-comunes {
+  font-size: 0.8rem;
+  line-height: 2;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.btn-principal {
+  background: black;
+  color: white;
+  max-width: 200px;
+  height: 60px;
+  @include flexbox(row, space-between, center);
+  padding: 0px 25px 0px 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 70px;
+  .linea-boton {
+    background: white;
+    width: 20px;
+    height: 1px;
+  }
+}
+
+.swiper-container-dos {
+  width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+  .swiper-slide {
+    border: 1px solid black;
+  }
+}
+.pie-seccion {
+  position: relative;
+  @include flexbox(column, center, flex-end);
+  padding-right: 30px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  .pie-difuminado {
+    color: rgba(191, 191, 191, 0.3);
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .pie-sub {
+    transform: scale(1, 1.2);
+  }
+}
+.pie-seccion:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: black;
 }
