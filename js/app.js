@@ -20,3 +20,12 @@ var swiper = new Swiper('.swiper-container', {
       autoplay: true,
       speed: 1000,
   });
+
+  var swiper = new Swiper('.swiper-container-tres',{
+    autoplay:true,
+    speed: 1000,
+  });
+  var swiper = new Swiper('.swiper-container-cuatro',{
+    autoplay:true,
+    speed: 1000,
+  });
