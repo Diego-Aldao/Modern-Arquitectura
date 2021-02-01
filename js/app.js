@@ -23,7 +23,25 @@ var swiper = new Swiper('.swiper-container', {
 
   var swiper = new Swiper('.swiper-container-tres',{
     autoplay:true,
-    speed: 1000,
+    speed: 100,
+    breakpoints:{
+      580:{
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024:{
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1240:{
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      1440:{
+        slidesPerView: 5,
+        spaceBetween: 20,
+      },
+    }
   });
   var swiper = new Swiper('.swiper-container-cuatro',{
     autoplay:true,
