@@ -29,3 +29,21 @@ var swiper = new Swiper('.swiper-container', {
     autoplay:true,
     speed: 1000,
   });
+  var swiper = new Swiper('.swiper-container-cinco', {
+    spaceBetween: 60,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+  var swiper = new Swiper('.swiper-container-seis', {
+    slidesPerView: 2,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

@@ -482,3 +482,214 @@ img {
     line-height: 2;
   }
 }
+
+//DATOS
+.datos {
+  background-color: black;
+  color: white;
+  padding-bottom: 80px;
+}
+
+.carta-datos {
+  padding: 20px 20px 40px;
+  border: 15px solid rgb(255, 255, 255);
+  position: relative;
+  margin-bottom: 70px;
+  .sub-textos {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  .titulos-principales {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 10px 0px 20px;
+    font-weight: 600;
+  }
+  .descripcion-carta-datos {
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+}
+.carta-datos::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 25%;
+  width: 15px;
+  height: 50%;
+  background: black;
+}
+
+.contenido-numeros {
+  @include flexbox(column, center, center);
+  margin-bottom: 50px;
+  .titulo-carta-blog {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    width: 120px;
+    text-align: center;
+  }
+  .titulo-carta-blog::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    background: white;
+    width: 50%;
+    height: 3px;
+  }
+  .mini-texto {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+}
+
+//TESTIMONIOS
+.swiper-container-cinco {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 80px;
+  overflow-x: hidden;
+  .swiper-pagination {
+    margin-top: 50px;
+  }
+  .swiper-pagination-bullet {
+    background: black;
+    border-radius: 0;
+    width: 20px !important;
+  }
+}
+.carta-testimonio {
+  position: relative;
+  @include flexbox(column, flex-start, flex-start);
+  padding: 3px 0px 0px 3px;
+  .img-testimonio {
+    background: white;
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+  }
+  .contenido-carta-testimonio {
+    background: white;
+    box-shadow: 5px 5px 5px rgb(228, 228, 228);
+    padding: 40px 20px 30px;
+  }
+  .nombre-persona-testimonio {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .titulo-persona-testimonio {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+  .icono {
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+  }
+  .contenido-persona-testimonio {
+    font-size: 0.8rem;
+    line-height: 2.2;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 40px;
+    height: 30px;
+    background: black;
+    z-index: -1;
+  }
+}
+
+//CLIENTES
+.black-bg {
+  background: black;
+  color: white;
+  .titulos-after:after {
+    background: white;
+  }
+}
+.swiper-container-seis {
+  overflow-x: hidden;
+  height: 180px;
+  position: relative;
+  overflow-x: hidden;
+  color: black;
+  .swiper-pagination {
+    background: black;
+  }
+  .swiper-pagination-progressbar-fill {
+    background: white !important;
+  }
+  .swiper-slide {
+    height: 120px;
+    background: white;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 150px;
+    height: 30px;
+    width: 30px;
+    &::after {
+      font-size: 0.8rem;
+      color: white;
+    }
+  }
+  .swiper-button-prev {
+    left: 200px !important;
+  }
+}
+
+//FOOTER
+.footer-principal {
+  padding-bottom: 80px;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 0.8rem;
+  .logo-footer {
+    border: 1px solid black;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .info-footer {
+    @include flexbox(column, space-evenly, flex-start);
+    list-style-type: none;
+  }
+  .links-footer {
+    padding: 5px 10px;
+    flex: 0 100%;
+    @include flexbox(row, flex-start, center);
+    position: relative;
+    margin: 20px 0px 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 2px;
+      height: 100%;
+      background: black;
+    }
+  }
+}
+.btn-flotante-inicio {
+  width: 40px;
+  height: 40px;
+  background: rgb(0, 0, 0);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  color: white;
+  @include flexbox(row, center, center);
+}
