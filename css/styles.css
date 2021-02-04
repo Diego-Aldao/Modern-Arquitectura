@@ -996,30 +996,44 @@ ul {
   color: white;
   background: red;
   margin-bottom: 40px;
-  padding: 70px 20px 70px 40px;
-}
-
-.carta-blog .btn-principal {
-  margin-bottom: 0px;
-  padding: 0;
-  background: none;
-  letter-spacing: 3px;
+  height: 280px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .carta-blog .contenido-carta {
-  border: 15px solid black;
-  padding: 20px 10px;
+  padding: 20px 10px 20px 40px;
   position: relative;
+  background: black;
+  width: 90%;
+  height: 40%;
+  margin-bottom: 30px;
+  max-width: 300px;
+  margin-left: 20px;
 }
 
 .carta-blog .fecha {
   position: absolute;
-  left: -90px;
+  left: -25px;
   top: 45px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   text-transform: uppercase;
   font-weight: 900;
+  color: white;
+  font-size: 0.7rem;
 }
 
 .carta-blog .titulo-carta-blog {
@@ -1027,10 +1041,66 @@ ul {
   font-size: 1.2rem;
 }
 
-.carta-blog .descripcion-carta-blog {
+.carta-blog-grande {
+  color: white;
+  background: red;
+  margin-bottom: 40px;
+  height: 530px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+.carta-blog-grande .contenido-carta-grande {
+  border: 15px solid black;
+  padding: 15px;
+  position: relative;
+  width: 80%;
+  margin-right: 15px;
+  min-height: 390px;
+}
+
+.carta-blog-grande .titulo-carta-blog {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  max-width: 400px;
+}
+
+.carta-blog-grande .descripcion-carta-blog {
   font-size: 0.75rem;
   margin: 20px 0px;
   line-height: 2;
+  max-width: 400px;
+}
+
+.carta-blog-grande .btn-principal {
+  margin-bottom: 0px;
+  padding: 0;
+  background: none;
+  letter-spacing: 3px;
+}
+
+.carta-blog-grande .fecha {
+  position: absolute;
+  left: -90px;
+  top: 45px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
 }
 
 .datos {

@@ -729,17 +729,67 @@ ul {
   color: white;
   background: rgb(255, 0, 0);
   margin-bottom: 40px;
-  padding: 70px 20px 70px 40px;
+  height: 280px;
+  width: 100%;
+  @include flexbox(row, flex-start, flex-end);
+
+  .contenido-carta {
+    padding: 20px 10px 20px 40px;
+    position: relative;
+    background: black;
+    width: 90%;
+    height: 40%;
+    margin-bottom: 30px;
+    max-width: 300px;
+    margin-left: 20px;
+  }
+  .fecha {
+    position: absolute;
+    left: -25px;
+    top: 45px;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    font-size: 0.7rem;
+  }
+  .titulo-carta-blog {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+}
+.carta-blog-grande {
+  color: white;
+  background: rgb(255, 0, 0);
+  margin-bottom: 40px;
+  height: 530px;
+  width: 100%;
+  @include flexbox(row, flex-end, flex-end);
+  padding-bottom: 30px;
+  .contenido-carta-grande {
+    border: 15px solid rgb(0, 0, 0);
+    padding: 15px;
+    position: relative;
+    width: 80%;
+    margin-right: 15px;
+    min-height: 390px;
+  }
+  .titulo-carta-blog {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    max-width: 400px;
+  }
+  .descripcion-carta-blog {
+    font-size: 0.75rem;
+    margin: 20px 0px;
+    line-height: 2;
+    max-width: 400px;
+  }
   .btn-principal {
     margin-bottom: 0px;
     padding: 0;
     background: none;
     letter-spacing: 3px;
-  }
-  .contenido-carta {
-    border: 15px solid rgb(0, 0, 0);
-    padding: 20px 10px;
-    position: relative;
   }
   .fecha {
     position: absolute;
@@ -748,15 +798,7 @@ ul {
     transform: rotate(-90deg);
     text-transform: uppercase;
     font-weight: 900;
-  }
-  .titulo-carta-blog {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-  }
-  .descripcion-carta-blog {
-    font-size: 0.75rem;
-    margin: 20px 0px;
-    line-height: 2;
+    color: white;
   }
 }
 
