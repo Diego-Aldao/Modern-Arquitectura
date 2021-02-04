@@ -579,20 +579,24 @@ ul {
 }
 
 //EQUIPO
-.contenido-equipo {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 570px, repeat(3, 1fr);
-  row-gap: 30px;
-  .carta-principal {
-    background: black;
-    color: white;
-    text-align: center;
-    padding-bottom: 40px;
+.equipo {
+  padding: 0px 0px 15px;
+  .header-secciones {
+    margin-bottom: 80px;
   }
+}
+.carta-principal {
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+  max-width: 400px;
+  margin: 0 auto;
   .imagen-persona-principal {
     width: 100%;
-    height: 300px;
+    min-height: 300px;
+    height: 85vw;
+    max-height: 400px;
+    background: white;
   }
   .nombre-persona-principal {
     text-transform: uppercase;
@@ -617,11 +621,24 @@ ul {
     border: 1px solid white;
     @include flexbox(row, center, center);
   }
+}
+.contenido-equipo {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 30px;
+  background: #f6f7f8;
+  color: red;
+  padding: 15px 15px;
   .carta-equipo {
-    height: 400px;
     text-align: center;
     position: relative;
     background: white;
+    background: black;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
   }
   .carta-equipo::before {
     content: "";
@@ -635,9 +652,11 @@ ul {
   }
 
   .img-persona {
-    background: black;
+    background: red;
     width: 100%;
-    height: 300px;
+    min-height: 280px;
+    height: 85vw;
+    max-height: 300px;
   }
   .nombre-persona {
     text-transform: uppercase;
@@ -648,6 +667,60 @@ ul {
   .cargo-persona {
     text-transform: capitalize;
     font-size: 0.75rem;
+  }
+}
+@media (min-width: 600px) {
+  .contenido-equipo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 25px;
+    .carta-equipo {
+      margin: 0 auto;
+    }
+    .img-persona {
+      height: 45vw;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .equipo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    .contenedor-gral {
+      padding-right: 15px;
+      padding-bottom: 200px;
+    }
+    .carta-grande {
+      width: 100%;
+      max-width: 635px;
+      margin-left: auto;
+    }
+  }
+  .carta-principal {
+    max-width: 550px;
+    margin-right: 0;
+    .imagen-persona-principal {
+      max-height: 555px;
+      height: 55vw;
+    }
+  }
+  .contenido-equipo {
+    padding: 215px 15px;
+    grid-template-rows: 380px 380px;
+    .carta-equipo {
+      margin: 0 auto 0 0;
+    }
+
+    .img-persona {
+      height: 15vw;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .contenido-equipo {
+    grid-template-columns: 300px 300px;
   }
 }
 
