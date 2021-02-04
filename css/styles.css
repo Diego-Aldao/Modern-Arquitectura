@@ -511,10 +511,6 @@ ul {
   overflow-x: hidden;
 }
 
-.titulos-after {
-  margin-bottom: 80px;
-}
-
 .titulos-after:after {
   content: "";
   position: absolute;
@@ -1406,12 +1402,16 @@ ul {
   background: white;
 }
 
+.clientes .header-secciones {
+  margin-bottom: 80px;
+}
+
 .swiper-container-seis {
   overflow-x: hidden;
-  height: 180px;
   position: relative;
   overflow-x: hidden;
   color: black;
+  height: 180px;
 }
 
 .swiper-container-seis .swiper-pagination {
@@ -1442,6 +1442,23 @@ ul {
 
 .swiper-container-seis .swiper-button-prev {
   left: 200px !important;
+}
+
+@media (min-width: 1024px) {
+  .clientes .contenedor-gral {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    -ms-grid-rows: 180px;
+        grid-template-rows: 180px;
+    padding: 50px 80px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .clientes .header-secciones {
+    margin: 0;
+  }
 }
 
 .footer-principal {
