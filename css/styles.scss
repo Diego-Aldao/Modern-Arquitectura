@@ -569,7 +569,7 @@ ul {
 }
 @media (min-width: 1240px) {
   .nosotros {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
     max-width: 1440px;
   }
   .after-swiper-nosotros {
@@ -580,7 +580,6 @@ ul {
 
 //EQUIPO
 .equipo {
-  padding: 0px 0px 15px;
   .header-secciones {
     margin-bottom: 80px;
   }
@@ -694,7 +693,7 @@ ul {
     }
     .carta-grande {
       width: 100%;
-      max-width: 635px;
+      max-width: 550px;
       margin-left: auto;
     }
   }
@@ -707,7 +706,7 @@ ul {
     }
   }
   .contenido-equipo {
-    padding: 215px 15px;
+    padding: 215px 80px 215px 15px;
     grid-template-rows: 380px 380px;
     .carta-equipo {
       margin: 0 auto 0 0;
@@ -725,6 +724,17 @@ ul {
 }
 
 //BLOG
+.blog {
+  padding: 100px 15px 15px;
+  .contenedor-gral {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .header-secciones {
+    margin-bottom: 100px;
+  }
+}
 .carta-blog {
   color: white;
   background: rgb(255, 0, 0);
@@ -740,7 +750,7 @@ ul {
     width: 90%;
     height: 40%;
     margin-bottom: 30px;
-    max-width: 300px;
+    max-width: 270px;
     margin-left: 20px;
   }
   .fecha {
@@ -799,6 +809,52 @@ ul {
     text-transform: uppercase;
     font-weight: 900;
     color: white;
+  }
+}
+@media (min-width: 1024px) {
+  .blog {
+    padding: 100px 0px 15px;
+    .contenedor-gral {
+      max-width: 940px;
+      display: grid;
+      grid-template-columns: 49% 49%;
+      grid-template-rows: 100px 250px 250px 100px;
+      column-gap: 25px;
+      row-gap: 30px;
+    }
+    .header-secciones {
+      grid-column: 1 / 3;
+    }
+    .carta-blog {
+      margin: 0;
+      height: 100%;
+    }
+    .carta-blog-grande {
+      grid-column: 2 / 3;
+      grid-row: 2 / 4;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .blog {
+    .contenedor-gral {
+      max-width: 1240px;
+      padding: 0 80px;
+    }
+    .carta-blog {
+      position: relative;
+      .contenido-carta {
+        position: absolute;
+        left: -40px;
+      }
+    }
+    .carta-blog-grande {
+      position: relative;
+      .contenido-carta-grande {
+        position: absolute;
+        right: -50px;
+      }
+    }
   }
 }
 
