@@ -1310,7 +1310,7 @@ ul {
 .swiper-container-cinco {
   width: 100%;
   position: relative;
-  margin-bottom: 20px;
+  margin: 100px 0px 20px;
   padding-bottom: 80px;
   overflow-x: hidden;
 }
@@ -1355,6 +1355,7 @@ ul {
   -webkit-box-shadow: 5px 5px 5px #e4e4e4;
           box-shadow: 5px 5px 5px #e4e4e4;
   padding: 40px 20px 30px;
+  width: 98%;
 }
 
 .carta-testimonio .nombre-persona-testimonio {
@@ -1375,7 +1376,7 @@ ul {
 
 .carta-testimonio .contenido-persona-testimonio {
   font-size: 0.8rem;
-  line-height: 2.2;
+  line-height: 2;
 }
 
 .carta-testimonio::before {
@@ -1387,6 +1388,13 @@ ul {
   height: 30px;
   background: black;
   z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  .testimonios .contenedor-gral {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
 }
 
 .black-bg {

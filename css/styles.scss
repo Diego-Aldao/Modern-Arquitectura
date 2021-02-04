@@ -961,9 +961,10 @@ ul {
 .swiper-container-cinco {
   width: 100%;
   position: relative;
-  margin-bottom: 20px;
+  margin: 100px 0px 20px;
   padding-bottom: 80px;
   overflow-x: hidden;
+
   .swiper-pagination {
     margin-top: 50px;
   }
@@ -987,6 +988,7 @@ ul {
     background: white;
     box-shadow: 5px 5px 5px rgb(228, 228, 228);
     padding: 40px 20px 30px;
+    width: 98%;
   }
   .nombre-persona-testimonio {
     text-transform: uppercase;
@@ -1003,7 +1005,7 @@ ul {
   }
   .contenido-persona-testimonio {
     font-size: 0.8rem;
-    line-height: 2.2;
+    line-height: 2;
   }
   &::before {
     content: "";
@@ -1014,6 +1016,14 @@ ul {
     height: 30px;
     background: black;
     z-index: -1;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonios {
+    .contenedor-gral {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
   }
 }
 

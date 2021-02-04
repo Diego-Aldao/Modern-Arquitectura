@@ -53,6 +53,12 @@ var swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
     },
+    breakpoints:{
+      1024:{
+        slidesPerView: 2,
+        spaceBetween: 80,
+      },
+    }
   });
   var swiper = new Swiper('.swiper-container-seis', {
     slidesPerView: 2,
@@ -64,4 +70,5 @@ var swiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
   });
