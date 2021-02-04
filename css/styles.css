@@ -1254,6 +1254,59 @@ ul {
   font-size: 0.75rem;
 }
 
+@media (min-width: 768px) {
+  .numeros-animados-js {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .carta-datos,
+  .numeros-animados-js {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .datos {
+    padding-bottom: 0;
+  }
+  .datos .contenedor-gral {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 49% 49%;
+        grid-template-columns: 49% 49%;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+    padding-bottom: 100px;
+  }
+  .datos .carta-datos {
+    padding: 50px;
+    margin-bottom: 0px;
+  }
+  .datos .numeros-animados-js {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .swiper-container-cinco {
   width: 100%;
   position: relative;

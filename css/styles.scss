@@ -864,7 +864,6 @@ ul {
   color: white;
   padding-bottom: 80px;
 }
-
 .carta-datos {
   padding: 20px 20px 40px;
   border: 15px solid rgb(255, 255, 255);
@@ -922,6 +921,39 @@ ul {
   .mini-texto {
     text-transform: uppercase;
     font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .numeros-animados-js {
+    @include flexbox(row, space-between, center);
+  }
+  .carta-datos,
+  .numeros-animados-js {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .datos {
+    padding-bottom: 0;
+    .contenedor-gral {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 49% 49%;
+      grid-template-rows: 1fr;
+      column-gap: 15px;
+      padding-bottom: 100px;
+    }
+    .carta-datos {
+      padding: 50px;
+      margin-bottom: 0px;
+    }
+    .numeros-animados-js {
+      flex-direction: column;
+    }
   }
 }
 
