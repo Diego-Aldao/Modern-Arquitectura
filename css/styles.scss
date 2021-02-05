@@ -1092,17 +1092,25 @@ ul {
   font-size: 0.8rem;
   .logo-footer {
     border: 1px solid black;
-    width: 100%;
+    width: 150px;
     height: 60px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+  }
+  .logo-f {
+    background: red;
+    width: 150px;
+    height: 60px;
+  }
+  .copy {
+    text-align: center;
   }
   .info-footer {
-    @include flexbox(column, space-evenly, flex-start);
+    @include flexbox(column, center, center);
   }
   .links-footer {
     padding: 5px 10px;
-    flex: 0 100%;
-    @include flexbox(row, flex-start, center);
+    min-width: 250px;
+    @include flexbox(row, center, center);
     position: relative;
     margin: 20px 0px 10px;
     &::after {
@@ -1113,6 +1121,19 @@ ul {
       width: 2px;
       height: 100%;
       background: black;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .footer-principal {
+    @include flexbox(row, center, center);
+    .logo-footer,
+    .copy,
+    .links-footer {
+      flex: 0 33%;
+      margin-left: 20px;
+      margin-right: 20px;
+      max-width: 380px;
     }
   }
 }

@@ -1470,9 +1470,19 @@ ul {
 
 .footer-principal .logo-footer {
   border: 1px solid black;
-  width: 100%;
+  width: 150px;
   height: 60px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+}
+
+.footer-principal .logo-f {
+  background: red;
+  width: 150px;
+  height: 60px;
+}
+
+.footer-principal .copy {
+  text-align: center;
 }
 
 .footer-principal .info-footer {
@@ -1483,19 +1493,17 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-principal .links-footer {
   padding: 5px 10px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 100%;
-          flex: 0 100%;
+  min-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1503,9 +1511,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1521,6 +1529,34 @@ ul {
   width: 2px;
   height: 100%;
   background: black;
+}
+
+@media (min-width: 1024px) {
+  .footer-principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-principal .logo-footer,
+  .footer-principal .copy,
+  .footer-principal .links-footer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 33%;
+            flex: 0 33%;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 380px;
+  }
 }
 
 .btn-flotante-inicio {
