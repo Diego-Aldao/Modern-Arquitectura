@@ -1160,7 +1160,7 @@ ul {
 
 @media (min-width: 1240px) {
   .blog .contenedor-gral {
-    max-width: 1240px;
+    max-width: 1440px;
     padding: 0 60px;
   }
   .blog .carta-blog {
@@ -1299,7 +1299,7 @@ ul {
     padding-bottom: 0;
   }
   .datos .contenedor-gral {
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
@@ -1408,7 +1408,7 @@ ul {
 
 @media (min-width: 1024px) {
   .testimonios .contenedor-gral {
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 }
