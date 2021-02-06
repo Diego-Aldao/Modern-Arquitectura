@@ -577,13 +577,12 @@ ul {
     grid-template-columns: 35% 65%;
     grid-template-rows: 1fr 110px;
     overflow: hidden;
-    column-gap: 20px;
     margin: 0 auto;
   }
   .after-swiper-nosotros {
     width: 75%;
     height: 25vw;
-    margin: 50px 0px 0px 0px;
+    margin: 50px auto 0px;
   }
 }
 @media (min-width: 1240px) {
@@ -675,7 +674,7 @@ ul {
     width: 100%;
     min-height: 280px;
     height: 85vw;
-    max-height: 300px;
+    max-height: 340px;
   }
   .nombre-persona {
     text-transform: uppercase;
@@ -713,27 +712,27 @@ ul {
     }
     .carta-grande {
       width: 100%;
-      max-width: 550px;
+      max-width: 650px;
       margin-left: auto;
     }
   }
   .carta-principal {
-    max-width: 550px;
+    max-width: 650px;
     margin-right: 0;
     .imagen-persona-principal {
-      max-height: 555px;
+      max-height: 650px;
       height: 55vw;
     }
   }
   .contenido-equipo {
     padding: 215px 60px 215px 15px;
-    grid-template-rows: 380px 380px;
+    grid-template-rows: 420px 420px;
     .carta-equipo {
       margin: 0 auto 0 0;
     }
 
     .img-persona {
-      height: 15vw;
+      height: 25vw;
     }
   }
 }
