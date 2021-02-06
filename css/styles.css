@@ -1602,4 +1602,84 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.header-paginas-secundarias {
+  background: black;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.header-paginas-secundarias .contenedor-gral-pag-sec {
+  width: 230px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0px 15px;
+}
+
+.header-paginas-secundarias .contenido-header-pag-sec {
+  border: 10px solid white;
+  padding: 60px 0px 60px 25px;
+  border-right: none;
+  min-height: 300px;
+  position: relative;
+}
+
+.header-paginas-secundarias .contenido-header-pag-sec:after {
+  content: "";
+  width: 10px;
+  height: 50px;
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.header-paginas-secundarias .contenido-header-pag-sec:before {
+  content: "";
+  width: 10px;
+  height: 50px;
+  background: white;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+
+.header-paginas-secundarias .titulo-pag-sec {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 30px 0px;
+  color: white;
+}
+
+.header-paginas-secundarias .nav-header-pag-sec {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-paginas-secundarias .li-header-pag-sec {
+  padding: 0 10px 0px 0px;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+}
+
+.header-paginas-secundarias .li-header-pag-sec i {
+  margin-left: 5px;
+}
 /*# sourceMappingURL=styles.css.map */

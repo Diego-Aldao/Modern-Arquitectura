@@ -13,7 +13,6 @@ $fuente-secundaria: "Roboto Condensed", sans-serif;
 }
 
 //GENERALES
-
 body {
   width: 100%;
   min-width: 320px;
@@ -1173,4 +1172,66 @@ ul {
   z-index: 9999;
   color: white;
   @include flexbox(row, center, center);
+}
+
+//ESTILOS SECCIONES
+
+.header-paginas-secundarias {
+  background: black;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  .contenedor-gral-pag-sec {
+    width: 230px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0px 15px;
+  }
+  .contenido-header-pag-sec {
+    border: 10px solid rgb(255, 255, 255);
+    padding: 60px 0px 60px 25px;
+    border-right: none;
+    min-height: 300px;
+    position: relative;
+    &:after {
+      content: "";
+      width: 10px;
+      height: 50px;
+      background: rgb(255, 255, 255);
+      position: absolute;
+      right: 0;
+      top: 0px;
+    }
+    &:before {
+      content: "";
+      width: 10px;
+      height: 50px;
+      background: rgb(255, 255, 255);
+      position: absolute;
+      right: 0;
+      bottom: 0px;
+    }
+  }
+  .titulo-pag-sec {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 30px 0px;
+    color: white;
+  }
+  .nav-header-pag-sec {
+    margin-top: 25px;
+    @include flexbox(row, flex-start, center);
+  }
+  .li-header-pag-sec {
+    padding: 0 10px 0px 0px;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 500;
+    i {
+      margin-left: 5px;
+    }
+  }
 }
