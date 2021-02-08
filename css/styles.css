@@ -1915,4 +1915,12 @@ ul {
   background: #fafafa;
   border-top: 1px solid #e4e4e4;
 }
+
+@media (min-width: 1024px) {
+  .footer-pag-sec {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
