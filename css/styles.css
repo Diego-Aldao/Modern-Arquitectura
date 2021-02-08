@@ -1712,19 +1712,28 @@ ul {
 }
 
 .contenedor-gral-pag-sec {
-  padding: 100px 0px;
+  padding: 100px 15px;
   max-width: 1140px;
   margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .contenedor-gral-pag-sec {
+    padding: 100px 0px;
+  }
 }
 
 .cartas-blog-pag-sec {
   border: 1px solid #e4e4e4;
   background: #fafafa;
   margin-bottom: 40px;
+  max-width: 720px;
+  margin: 0 auto 40px;
 }
 
 .cartas-blog-pag-sec .img-cartas-blog {
-  height: 200px;
+  height: 60vw;
+  max-height: 447px;
   width: 100%;
   background: black;
 }
@@ -1795,6 +1804,7 @@ ul {
   margin: 20px 0px;
   height: auto;
   width: 50%;
+  max-width: 150px;
   padding: 10px 0px;
   margin-left: auto;
   display: -webkit-box;
@@ -1815,6 +1825,52 @@ ul {
   border: 1px solid #acacac;
 }
 
+@media (min-width: 1024px) {
+  .cartas-blog-pag-sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 940px;
+  }
+  .cartas-blog-pag-sec .img-cartas-blog {
+    width: 70%;
+  }
+  .cartas-blog-pag-sec .contenido-cartas-blog {
+    width: 30%;
+    padding: 25px;
+  }
+  .cartas-blog-pag-sec:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1240px) {
+  .cartas-blog-pag-sec {
+    max-width: 100%;
+    height: 410px;
+  }
+  .cartas-blog-pag-sec .img-cartas-blog {
+    width: 60%;
+    max-height: 410px;
+  }
+  .cartas-blog-pag-sec .contenido-cartas-blog {
+    width: 40%;
+  }
+}
+
 .nav-blog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1829,8 +1885,9 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px;
   height: 30px;
+  width: 210px;
+  margin: 50px auto 0px;
 }
 
 .nav-blog .links-nav-blog {

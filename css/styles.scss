@@ -1268,17 +1268,25 @@ ul {
 //CONTENIDO PRINCIPAL
 
 .contenedor-gral-pag-sec {
-  padding: 100px 0px;
+  padding: 100px 15px;
   max-width: 1140px;
   margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .contenedor-gral-pag-sec {
+    padding: 100px 0px;
+  }
 }
 
 .cartas-blog-pag-sec {
   border: 1px solid rgb(228, 228, 228);
   background: rgb(250, 250, 250);
   margin-bottom: 40px;
+  max-width: 720px;
+  margin: 0 auto 40px;
   .img-cartas-blog {
-    height: 200px;
+    height: 60vw;
+    max-height: 447px;
     width: 100%;
     background: black;
   }
@@ -1328,6 +1336,7 @@ ul {
     margin: 20px 0px;
     height: auto;
     width: 50%;
+    max-width: 150px;
     padding: 10px 0px;
     margin-left: auto;
     @include flexbox(row, center, center);
@@ -1336,11 +1345,41 @@ ul {
     border: 1px solid rgb(172, 172, 172);
   }
 }
+@media (min-width: 1024px) {
+  .cartas-blog-pag-sec {
+    @include flexbox(row, center, flex-start);
+    max-width: 940px;
+    .img-cartas-blog {
+      width: 70%;
+    }
+    .contenido-cartas-blog {
+      width: 30%;
+      padding: 25px;
+    }
+  }
+  .cartas-blog-pag-sec:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1240px) {
+  .cartas-blog-pag-sec {
+    max-width: 100%;
+    height: 410px;
+    .img-cartas-blog {
+      width: 60%;
+      max-height: 410px;
+    }
+    .contenido-cartas-blog {
+      width: 40%;
+    }
+  }
+}
 
 .nav-blog {
   @include flexbox(row, flex-start, center);
-  margin-top: 50px;
   height: 30px;
+  width: 210px;
+  margin: 50px auto 0px;
   .links-nav-blog {
     @include flexbox(row, center, center);
     height: 100%;
