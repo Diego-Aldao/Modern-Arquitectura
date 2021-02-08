@@ -1235,3 +1235,91 @@ ul {
     }
   }
 }
+
+//CONTENIDO PRINCIPAL
+
+.contenedor-gral-pag-sec {
+  padding: 100px 15px;
+}
+
+.cartas-blog-pag-sec {
+  border: 1px solid rgb(228, 228, 228);
+  background: rgb(250, 250, 250);
+  margin-bottom: 40px;
+  .img-cartas-blog {
+    height: 200px;
+    width: 100%;
+    background: black;
+  }
+  .contenido-cartas-blog {
+    padding: 50px 20px 0px;
+  }
+  .titulos-cartas-blog {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1.4;
+  }
+  .datos-cartas-blog {
+    width: 100%;
+    margin: 20px 0px 10px;
+    @include flexbox(row, flex-start, center);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(172, 172, 172);
+    letter-spacing: 0.5px;
+  }
+  .link-cartas-blog {
+    margin-right: 20px;
+    position: relative;
+  }
+  .fuerte {
+    color: black;
+  }
+  .linea {
+    width: 1px;
+    height: 80%;
+    background: rgb(172, 172, 172);
+    position: absolute;
+    right: -10px;
+    top: 0;
+    transform: skew(-15deg);
+  }
+  .textos-comunes {
+    text-align: justify;
+    max-width: 100%;
+    margin: 0;
+    line-height: 2.1;
+  }
+  .btn-principal {
+    margin: 20px 0px;
+    height: auto;
+    width: 50%;
+    padding: 10px 0px;
+    margin-left: auto;
+    @include flexbox(row, center, center);
+    background: none;
+    color: black;
+    border: 1px solid rgb(172, 172, 172);
+  }
+}
+
+.nav-blog {
+  @include flexbox(row, flex-start, center);
+  margin-top: 50px;
+  height: 30px;
+  .links-nav-blog {
+    @include flexbox(row, center, center);
+    height: 100%;
+    width: 30px;
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+}
+.footer-pag-sec {
+  background: rgb(250, 250, 250);
+  border-top: 1px solid rgb(228, 228, 228);
+}
