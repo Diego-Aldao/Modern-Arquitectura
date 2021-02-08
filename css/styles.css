@@ -2016,11 +2016,15 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  .contenido-trabajos {
+    padding: 0 40px;
+  }
   .contenido-trabajos .contenedor-gral-pag-sec {
     -ms-grid-columns: (auto)[4];
         grid-template-columns: repeat(4, auto);
     -ms-grid-rows: (250px)[7];
         grid-template-rows: repeat(7, 250px);
+    padding: 100px 0px;
   }
   .contenido-trabajos .img-trabajos-grandes:nth-child(1) {
     -ms-grid-row: 1;
