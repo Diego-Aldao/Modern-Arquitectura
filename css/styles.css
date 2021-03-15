@@ -1959,7 +1959,7 @@ ul {
         grid-template-rows: repeat(11, 300px);
     -webkit-column-gap: 20px;
             column-gap: 20px;
-    max-width: 1140px;
+    max-width: 1440px;
     padding: 100px 15px;
   }
   .contenido-trabajos .img-trabajos-grandes:nth-child(1) {
