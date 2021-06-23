@@ -11,6 +11,10 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -42,7 +46,7 @@
       <div class="contenedor-gral-pag-sec">
         <div class="contenido-header-pag-sec">
           <h2 class="titulo-pag-sec">
-            planificacion, diseño y conservacion historica.
+            Lugar construido de alta calidad, efectivo e inspirador.
           </h2>
         </div>
         <ul class="nav-header-pag-sec">
@@ -53,21 +57,44 @@
         </ul>
       </div>
     </header>
-    <section class="contenido-pag-sec contenido-trabajos">
-      <div class="contenedor-gral-pag-sec">
-        <div class="img-trabajos-grandes"></div>
-        <div class="img-trabajos-pequeños img-01"></div>
-        <div class="img-trabajos-grandes"></div>
-        <div class="img-trabajos-grandes"></div>
-        <div class="img-trabajos-grandes"></div>
-        <div class="img-trabajos-grandes"></div>
-        <div class="img-trabajos-pequeños img-02"></div>
-        <div class="img-trabajos-grandes"></div>
-        <div class="img-trabajos-grandes"></div>
-        <div class="img-trabajos-grandes"></div>
-        <div class="img-trabajos-grandes"></div>
-        <div class="img-trabajos-pequeños img-03"></div>
-      </div>
+    <section class="contenido-pag-sec contenido-blog">
+      <header class="contenedor-gral-pag-sec">
+        <div class="swiper-blog">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-blog">01</div>
+            <div class="swiper-slide slide-blog">02</div>
+            <div class="swiper-slide slide-blog">03</div>
+          </div>
+        </div>
+        <div class="descripcion-post-principal-blog">
+          <h2 class="titulo-descripcion-blog">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis,
+            repellendus.
+          </h2>
+          <ul class="nav-blog-principal">
+            <li class="links-blog-principal fuerte">20 jul 2020</li>
+            <span class="linea"></span>
+            <li class="links-blog-principal">admin</li>
+            <li class="links-blog-principal">5 comentarios</li>
+          </ul>
+          <p class="descripcion-blog textos-comunes">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quasi
+            facilis. Tenetur nihil tempore dignissimos ab illum vitae cumque,
+            laudantium recusandae ullam dicta, tempora praesentium obcaecati et
+            nostrum id. Accusamus, explicabo repudiandae. Distinctio quidem
+            placeat impedit veniam. Facilis odit, consequatur corrupti illo
+            aperiam facere nulla autem quia omnis. Saepe, minus!
+          </p>
+          <p class="descripcion-blog textos-comunes">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quasi
+            facilis. Tenetur nihil tempore dignissimos ab illum vitae cumque,
+            laudantium recusandae ullam dicta, tempora praesentium obcaecati et
+            nostrum id. Accusamus, explicabo repudiandae. Distinctio quidem
+            placeat impedit veniam. Facilis odit, consequatur corrupti illo
+            aperiam facere nulla autem quia omnis. Saepe, minus!
+          </p>
+        </div>
+      </header>
     </section>
     <footer class="footer-principal contenedor-gral footer-pag-sec">
       <div class="logo-footer">
@@ -81,6 +108,7 @@
       </ul>
     </footer>
     <div class="btn-flotante-inicio"><i class="fas fa-chevron-up"></i></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/js/app.js"></script>
   </body>
 </html>

@@ -83,3 +83,7 @@ var swiper = new Swiper('.swiper-container-seis', {
       },
     }
   });
+  var swiper = new Swiper('.swiper-blog',{
+    autoplay:true,
+    speed: 1000,
+  });

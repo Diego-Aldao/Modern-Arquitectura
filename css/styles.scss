@@ -1519,3 +1519,51 @@ ul {
     }
   }
 }
+
+//PAGINA BLOG
+
+.swiper-blog {
+  overflow-x: hidden;
+  border: 2px solid black;
+  min-height: 200px;
+  height: 200px;
+  .swiper-slide {
+    background: red;
+    height: 100%;
+  }
+}
+.contenido-blog {
+  .descripcion-post-principal-blog {
+    margin-top: 20px;
+  }
+  .titulo-descripcion-blog {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin: 20px 0px;
+  }
+  .textos-comunes {
+    text-align: justify;
+    max-width: 100%;
+  }
+  .nav-blog-principal {
+    width: 100%;
+    margin: 20px 0px 10px;
+    @include flexbox(row, flex-start, center);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(172, 172, 172);
+    letter-spacing: 0.5px;
+    position: relative;
+  }
+  .links-blog-principal {
+    margin-right: 20px;
+    position: relative;
+  }
+  .fuerte {
+    color: black;
+  }
+}
