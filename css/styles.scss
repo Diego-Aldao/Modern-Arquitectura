@@ -1566,4 +1566,17 @@ ul {
   .fuerte {
     color: black;
   }
+  .lista-tags {
+    @include flexbox(row, flex-start, flex-start);
+    flex-wrap: wrap;
+    width: 100%;
+    list-style-type: none;
+  }
+  .links-tags {
+    background: rgb(240, 240, 240);
+    margin: 3px 2px;
+    padding: 8px 13px;
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
 }

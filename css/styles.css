@@ -2171,4 +2171,32 @@ ul {
 .contenido-blog .fuerte {
   color: black;
 }
+
+.contenido-blog .lista-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  list-style-type: none;
+}
+
+.contenido-blog .links-tags {
+  background: #f0f0f0;
+  margin: 3px 2px;
+  padding: 8px 13px;
+  font-size: 12px;
+  letter-spacing: 0px;
+}
 /*# sourceMappingURL=styles.css.map */
