@@ -76,19 +76,17 @@ ul {
     letter-spacing: 1px;
     margin-bottom: 20px;
   }
-  .titulos-principales {
-    text-transform: uppercase;
-    font-size: clamp(1.875rem, 4.5vw, 2.5rem);
-    font-weight: 600;
-    line-height: 1.3;
-    position: relative;
-    margin-bottom: 30px;
-  }
 }
-.header-secciones {
-  .titulos-after {
-    font-size: clamp(1.625rem, 4vw, 2.25rem);
-  }
+.titulos-principales {
+  text-transform: uppercase;
+  font-size: clamp(1.875rem, 4.5vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.3;
+  position: relative;
+  margin-bottom: 30px;
+}
+.titulos-after {
+  font-size: clamp(1.625rem, 4vw, 2.25rem);
 }
 
 //BOTONES
@@ -1522,7 +1520,7 @@ ul {
 
 //PAGINA BLOG
 
-.swiper-blog {
+.swiper-blog-principal {
   overflow-x: hidden;
   border: 2px solid black;
   min-height: 200px;
@@ -1609,5 +1607,22 @@ ul {
     @include flexbox(row, center, center);
     margin-right: 5px;
     font-size: 16px;
+  }
+  .swiper-blog-post-relacionados {
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .img-post-relacionados {
+    width: 100%;
+    height: 200px;
+  }
+  .contenido-post-relacionados {
+    padding: 0px 20px;
+    width: 100%;
+  }
+  .slide-blog-post-relacionados {
+    @include flexbox(column, center, center);
+    background: rgb(240, 240, 240);
   }
 }

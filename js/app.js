@@ -83,7 +83,9 @@ var swiper = new Swiper('.swiper-container-seis', {
       },
     }
   });
-  var swiper = new Swiper('.swiper-blog',{
+  var swiper = new Swiper('.swiper-blog-principal',{
     autoplay:true,
     speed: 1000,
+  });
+  var swiper = new Swiper('.swiper-blog-post-relacionados',{
   });
