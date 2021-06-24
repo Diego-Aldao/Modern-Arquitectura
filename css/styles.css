@@ -2347,4 +2347,48 @@ ul {
   margin-left: auto;
   margin-right: 50px;
 }
+
+.contenido-blog .carta-comentarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 50px;
+}
+
+.contenido-blog .img-user-comentarios {
+  background: black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+}
+
+.contenido-blog .contenido-comentarios {
+  padding: 0px 10px 0px 0px;
+}
+
+.contenido-blog .contenido-comentarios .titulo-descripcion-blog {
+  font-size: 1rem;
+  margin: 0px 0px 15px 0px;
+}
+
+.contenido-blog .contenido-comentarios .nav-blog-principal {
+  margin: 15px 0px;
+  font-size: 0.75rem;
+}
+
+.contenido-blog .contenido-comentarios .textos-comunes {
+  text-align: left;
+  margin-top: 15px;
+}
 /*# sourceMappingURL=styles.css.map */
