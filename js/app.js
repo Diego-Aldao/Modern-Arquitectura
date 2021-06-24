@@ -86,6 +86,13 @@ var swiper = new Swiper('.swiper-container-seis', {
   var swiper = new Swiper('.swiper-blog-principal',{
     autoplay:true,
     speed: 1000,
+    loop:true,
+    breakpoints:{
+      1024:{
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+    }
   });
   var swiper = new Swiper('.swiper-blog-post-relacionados',{
     navigation: {
