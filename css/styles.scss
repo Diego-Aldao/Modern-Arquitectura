@@ -1531,9 +1531,6 @@ ul {
   }
 }
 .contenido-blog {
-  .contenedor-gral-pag-sec {
-    padding-bottom: 0px;
-  }
   .descripcion-post-principal-blog {
     margin-top: 20px;
   }
@@ -1684,5 +1681,35 @@ ul {
       text-align: left;
       margin-top: 15px;
     }
+  }
+  .form-comentarios {
+    width: 100%;
+    @include flexbox(column, flex-start, flex-start);
+    background: rgb(247, 247, 247);
+    padding: 20px;
+    .btn-principal {
+      margin: 0;
+      width: 100%;
+      max-width: 500px;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+  .inputs-form-comentarios {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    background: rgb(247, 247, 247);
+    border-bottom: 4px solid rgb(165, 165, 165);
+    font-size: 0.75rem;
+    outline: none;
+    &::placeholder {
+      color: black;
+    }
+  }
+  .textarea {
+    resize: none;
+    height: 100px;
   }
 }

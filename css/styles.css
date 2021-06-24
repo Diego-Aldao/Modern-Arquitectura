@@ -2121,10 +2121,6 @@ ul {
   height: 100%;
 }
 
-.contenido-blog .contenedor-gral-pag-sec {
-  padding-bottom: 0px;
-}
-
 .contenido-blog .descripcion-post-principal-blog {
   margin-top: 20px;
 }
@@ -2390,5 +2386,66 @@ ul {
 .contenido-blog .contenido-comentarios .textos-comunes {
   text-align: left;
   margin-top: 15px;
+}
+
+.contenido-blog .form-comentarios {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.contenido-blog .form-comentarios .btn-principal {
+  margin: 0;
+  width: 100%;
+  max-width: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.contenido-blog .inputs-form-comentarios {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: none;
+  background: #f7f7f7;
+  border-bottom: 4px solid #a5a5a5;
+  font-size: 0.75rem;
+  outline: none;
+}
+
+.contenido-blog .inputs-form-comentarios::-webkit-input-placeholder {
+  color: black;
+}
+
+.contenido-blog .inputs-form-comentarios:-ms-input-placeholder {
+  color: black;
+}
+
+.contenido-blog .inputs-form-comentarios::-ms-input-placeholder {
+  color: black;
+}
+
+.contenido-blog .inputs-form-comentarios::placeholder {
+  color: black;
+}
+
+.contenido-blog .textarea {
+  resize: none;
+  height: 100px;
 }
 /*# sourceMappingURL=styles.css.map */
