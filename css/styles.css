@@ -2121,15 +2121,19 @@ ul {
   height: 100%;
 }
 
+.contenido-blog .contenedor-gral-pag-sec {
+  padding-bottom: 0px;
+}
+
 .contenido-blog .descripcion-post-principal-blog {
   margin-top: 20px;
 }
 
 .contenido-blog .titulo-descripcion-blog {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   line-height: 1.4;
   margin: 20px 0px;
 }
@@ -2198,5 +2202,62 @@ ul {
   padding: 8px 13px;
   font-size: 12px;
   letter-spacing: 0px;
+}
+
+.contenido-blog .compartir {
+  padding: 50px 0px;
+  position: relative;
+}
+
+.contenido-blog .compartir::after {
+  content: "";
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 3px;
+  background: #cccccc;
+  position: absolute;
+}
+
+.contenido-blog .lista-compartir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  list-style-type: none;
+}
+
+.contenido-blog .links-compartir {
+  border: 1px solid #cccccc;
+  color: #7c7c7c;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5px;
+  font-size: 16px;
 }
 /*# sourceMappingURL=styles.css.map */
