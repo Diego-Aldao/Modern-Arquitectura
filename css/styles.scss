@@ -1612,6 +1612,8 @@ ul {
     overflow-x: hidden;
     width: 100%;
     margin-top: 50px;
+    padding-top: 70px;
+    position: relative;
   }
   .img-post-relacionados {
     width: 100%;
@@ -1620,9 +1622,41 @@ ul {
   .contenido-post-relacionados {
     padding: 0px 20px;
     width: 100%;
+    .titulo-descripcion-blog {
+      line-height: 1.7;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+    .textos-comunes {
+      line-height: 2.2;
+    }
+    .btn-principal {
+      margin: 0px 0px 20px 0px;
+      width: 60%;
+      height: 45px;
+      padding: 0px;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
   }
   .slide-blog-post-relacionados {
     @include flexbox(column, center, center);
     background: rgb(240, 240, 240);
+  }
+  .swiper-btn-post {
+    top: 25px;
+    background: black;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    @include flexbox(row, center, center);
+  }
+  .swiper-btn-post::after {
+    font-size: 0.6rem;
+    color: white;
+  }
+  .swiper-button-prev {
+    margin-left: auto;
+    margin-right: 50px;
   }
 }

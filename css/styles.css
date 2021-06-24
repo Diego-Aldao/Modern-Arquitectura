@@ -2265,6 +2265,8 @@ ul {
   overflow-x: hidden;
   width: 100%;
   margin-top: 50px;
+  padding-top: 70px;
+  position: relative;
 }
 
 .contenido-blog .img-post-relacionados {
@@ -2275,6 +2277,27 @@ ul {
 .contenido-blog .contenido-post-relacionados {
   padding: 0px 20px;
   width: 100%;
+}
+
+.contenido-blog .contenido-post-relacionados .titulo-descripcion-blog {
+  line-height: 1.7;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.contenido-blog .contenido-post-relacionados .textos-comunes {
+  line-height: 2.2;
+}
+
+.contenido-blog .contenido-post-relacionados .btn-principal {
+  margin: 0px 0px 20px 0px;
+  width: 60%;
+  height: 45px;
+  padding: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.9rem;
 }
 
 .contenido-blog .slide-blog-post-relacionados {
@@ -2292,5 +2315,36 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   background: #f0f0f0;
+}
+
+.contenido-blog .swiper-btn-post {
+  top: 25px;
+  background: black;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenido-blog .swiper-btn-post::after {
+  font-size: 0.6rem;
+  color: white;
+}
+
+.contenido-blog .swiper-button-prev {
+  margin-left: auto;
+  margin-right: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
