@@ -1705,9 +1705,9 @@ ul {
     background: rgb(247, 247, 247);
     padding: 20px;
     .btn-principal {
-      margin: 0;
+      margin: 20px 0px 0px 0px;
       width: 100%;
-      max-width: 500px;
+      max-width: 250px;
       justify-content: center;
       padding: 0;
     }
@@ -1715,7 +1715,7 @@ ul {
   .inputs-form-comentarios {
     width: 100%;
     height: 40px;
-    margin-bottom: 20px;
+    margin: 20px 0px;
     border: none;
     background: rgb(247, 247, 247);
     border-bottom: 4px solid rgb(165, 165, 165);
@@ -1723,6 +1723,8 @@ ul {
     outline: none;
     &::placeholder {
       color: black;
+      text-transform: uppercase;
+      font-weight: 600;
     }
   }
   .textarea {
@@ -1797,6 +1799,33 @@ ul {
     .img-post-relacionados {
       height: 20vw;
       max-height: 250px;
+    }
+  }
+}
+
+//QUERYS POST RELACIONADOS
+
+@media (min-width: 768px) {
+  .contenido-blog {
+    .contenido-comentarios {
+      .textos-comunes {
+        max-width: 80%;
+      }
+    }
+    .form-comentarios {
+      @include flexbox(row, flex-start, flex-start);
+      flex-wrap: wrap;
+      .titulo-descripcion-blog {
+        width: 100%;
+      }
+    }
+    #nombre,
+    #correo,
+    #sitio-web {
+      width: 30%;
+    }
+    #correo {
+      margin: 20px auto;
     }
   }
 }

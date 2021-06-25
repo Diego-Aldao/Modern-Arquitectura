@@ -2432,9 +2432,9 @@ ul {
 }
 
 .contenido-blog .form-comentarios .btn-principal {
-  margin: 0;
+  margin: 20px 0px 0px 0px;
   width: 100%;
-  max-width: 500px;
+  max-width: 250px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2444,7 +2444,7 @@ ul {
 .contenido-blog .inputs-form-comentarios {
   width: 100%;
   height: 40px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
   border: none;
   background: #f7f7f7;
   border-bottom: 4px solid #a5a5a5;
@@ -2454,18 +2454,26 @@ ul {
 
 .contenido-blog .inputs-form-comentarios::-webkit-input-placeholder {
   color: black;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .contenido-blog .inputs-form-comentarios:-ms-input-placeholder {
   color: black;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .contenido-blog .inputs-form-comentarios::-ms-input-placeholder {
   color: black;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .contenido-blog .inputs-form-comentarios::placeholder {
   color: black;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .contenido-blog .textarea {
@@ -2543,6 +2551,40 @@ ul {
   .contenido-blog .img-post-relacionados {
     height: 20vw;
     max-height: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenido-blog .contenido-comentarios .textos-comunes {
+    max-width: 80%;
+  }
+  .contenido-blog .form-comentarios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contenido-blog .form-comentarios .titulo-descripcion-blog {
+    width: 100%;
+  }
+  .contenido-blog #nombre,
+  .contenido-blog #correo,
+  .contenido-blog #sitio-web {
+    width: 30%;
+  }
+  .contenido-blog #correo {
+    margin: 20px auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
