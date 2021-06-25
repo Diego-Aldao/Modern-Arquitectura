@@ -25,6 +25,7 @@ var swiper = new Swiper('.swiper-container-dos', {
 var swiper = new Swiper('.swiper-container-tres',{
     autoplay:true,
     speed: 100,
+    loop:true,
     breakpoints:{
       580:{
         slidesPerView: 2,
@@ -42,7 +43,11 @@ var swiper = new Swiper('.swiper-container-tres',{
         slidesPerView: 5,
         spaceBetween: 20,
       },
-    }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 
 var swiper = new Swiper('.swiper-container-cuatro',{
