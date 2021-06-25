@@ -433,32 +433,25 @@ ul {
   flex-wrap: wrap;
   margin-top: 80px;
   margin-bottom: 60px;
+  .linea-proyecto {
+    width: 2px;
+    height: 20px;
+    background: rgb(230, 230, 230);
+    display: block;
+    margin: 0px 15px 12px;
+    transform: rotate(25deg);
+  }
   .item-proyectos {
-    flex: 0 121px;
+    flex-wrap: wrap;
     @include flexbox(row, center, center);
     text-transform: capitalize;
     font-size: 1.125rem;
     font-weight: 600;
     position: relative;
     margin-bottom: 10px;
-    margin-right: 20px;
   }
   .item-proyectos:nth-child(1) {
     color: #d5dd02;
-  }
-  .item-proyectos::after {
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 0px;
-    width: 1px;
-    height: 100%;
-    background: black;
-    transform: skew(-15deg);
-  }
-  .item-proyectos:nth-child(1)::after,
-  .item-proyectos:nth-child(3)::after {
-    visibility: hidden;
   }
 }
 .swiper-container-tres {
