@@ -536,17 +536,29 @@ ul {
   background: red;
   height: 100%;
   overflow: hidden;
+  .btn-nav-swiper {
+    top: 59vw;
+    left: 0;
+  }
+  .swiper-button-next {
+    margin-left: 50px;
+    margin-right: auto;
+  }
 }
 .after-swiper-nosotros {
   margin-bottom: 50px;
   height: 50vw;
   margin-left: auto;
   position: relative;
+  margin-bottom: 80px;
 }
 @media (min-width: 620px) {
   .after-swiper-nosotros {
     width: 85%;
-    margin: 120px auto 50px 0px;
+    margin: 120px auto 80px 0px;
+    .btn-nav-swiper {
+      top: 55vw;
+    }
   }
   .after-swiper-nosotros:after {
     content: "";
@@ -576,6 +588,9 @@ ul {
 @media (min-width: 768px) {
   .after-swiper-nosotros {
     height: 40vw;
+    .btn-nav-swiper {
+      top: 45vw;
+    }
   }
 }
 @media (min-width: 1024px) {
@@ -589,17 +604,28 @@ ul {
   .after-swiper-nosotros {
     width: 75%;
     height: 25vw;
-    margin: 50px auto 0px;
+    margin: 50px auto 150px;
+    .btn-nav-swiper {
+      top: 28vw;
+    }
   }
 }
 @media (min-width: 1240px) {
   .nosotros {
-    grid-template-columns: 49% 49%;
-    max-width: 1440px;
+    grid-template-columns: 1fr 555px 555px 1fr;
+    .header-secciones {
+      grid-column: 2 / 3;
+    }
+    .pie-seccion {
+      grid-column: 2 / 5;
+    }
   }
   .after-swiper-nosotros {
     height: 20vw;
-    max-height: 300px;
+    grid-column: 3 / 5;
+    .btn-nav-swiper {
+      top: 23vw;
+    }
   }
 }
 
@@ -719,7 +745,7 @@ ul {
     }
     .carta-grande {
       width: 100%;
-      max-width: 650px;
+      max-width: 555px;
       margin-left: auto;
     }
   }

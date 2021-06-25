@@ -53,6 +53,10 @@ var swiper = new Swiper('.swiper-container-tres',{
 var swiper = new Swiper('.swiper-container-cuatro',{
     autoplay:true,
     speed: 1000,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 
 var swiper = new Swiper('.swiper-container-cinco', {
