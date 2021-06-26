@@ -139,6 +139,30 @@ ul {
   font-weight: 400;
   max-width: 85%;
 }
+.titulos-cartas-pag-sec {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 1.4;
+}
+.datos-cartas-pag-sec {
+  width: 100%;
+  margin: 20px 0px 10px;
+  @include flexbox(row, flex-start, center);
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(172, 172, 172);
+  letter-spacing: 0.5px;
+  .link-cartas-pag-sec {
+    margin-right: 20px;
+    position: relative;
+  }
+  .fuerte {
+    color: black;
+  }
+}
 
 //BOTONES
 .btn-principal {
@@ -1223,51 +1247,51 @@ ul {
 
 //ESTILOS PAGINAS SECUNDARIAS
 
-//NOTICIAS-PAG-SEC
 .header-paginas-secundarias {
   padding-top: 50px;
   padding-bottom: 20px;
+  margin-top: 70px;
   background: black;
   .contenedor-gral-pag-sec {
     width: 100%;
-    margin: 0 auto;
     height: 100%;
+    margin: 0 auto;
     padding: 0px 15px;
   }
   .contenido-header-pag-sec {
-    border: 10px solid rgb(255, 255, 255);
-    padding: 60px 0px 60px 25px;
-    border-right: none;
-    min-height: 300px;
-    width: 230px;
-    margin: 0 auto;
     position: relative;
+    width: 230px;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 60px 0px 60px 25px;
+    border: 10px solid rgb(255, 255, 255);
+    border-right: none;
     &:after {
       content: "";
-      width: 10px;
-      height: 50px;
-      background: rgb(255, 255, 255);
       position: absolute;
       right: 0;
       top: 0px;
-    }
-    &:before {
-      content: "";
       width: 10px;
       height: 50px;
       background: rgb(255, 255, 255);
+    }
+    &:before {
+      content: "";
       position: absolute;
       right: 0;
       bottom: 0px;
+      width: 10px;
+      height: 50px;
+      background: rgb(255, 255, 255);
     }
   }
   .titulo-pag-sec {
+    margin: 30px 0px;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 400;
     line-height: 1.4;
-    margin: 30px 0px;
     color: white;
   }
   .nav-header-pag-sec {
@@ -1286,7 +1310,18 @@ ul {
     }
   }
 }
+.contenedor-gral-pag-sec {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
 
+.footer-pag-sec {
+  background: rgb(250, 250, 250);
+  border-top: 1px solid rgb(228, 228, 228);
+}
+
+//QUERYS PAGINAS SECUNDARIAS
 @media (min-width: 768px) {
   .header-paginas-secundarias {
     .titulo-pag-sec {
@@ -1295,9 +1330,9 @@ ul {
       margin-top: 35px;
     }
     .contenido-header-pag-sec {
-      margin-left: 0;
-      min-height: 220px;
       width: 200px;
+      min-height: 220px;
+      margin-left: 0;
     }
     .nav-header-pag-sec {
       margin-left: 0;
@@ -1311,14 +1346,9 @@ ul {
       padding: 0;
     }
   }
-}
-
-//CONTENIDO PRINCIPAL
-
-.contenedor-gral-pag-sec {
-  padding: 100px 15px;
-  max-width: 1140px;
-  margin: 0 auto;
+  .footer-pag-sec {
+    justify-content: space-between;
+  }
 }
 @media (min-width: 1160px) {
   .contenedor-gral-pag-sec {
@@ -1326,73 +1356,67 @@ ul {
   }
 }
 
-.cartas-blog-pag-sec {
-  border: 1px solid rgb(228, 228, 228);
-  background: rgb(250, 250, 250);
-  margin-bottom: 40px;
+// CONTENIDO PRINCIPAL NOTICIAS (PAG-SEC)
+.cartas-noticias {
   max-width: 720px;
   margin: 0 auto 40px;
-  .img-cartas-blog {
+  border: 1px solid rgb(228, 228, 228);
+  background: rgb(250, 250, 250);
+  .img-cartas-noticias {
     height: 60vw;
     max-height: 447px;
     width: 100%;
     background: black;
   }
-  .contenido-cartas-blog {
+  .contenido-cartas-noticias {
     padding: 50px 20px 0px;
   }
-  .titulos-cartas-blog {
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-    line-height: 1.4;
-  }
-  .datos-cartas-blog {
-    width: 100%;
-    margin: 20px 0px 10px;
-    @include flexbox(row, flex-start, center);
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: rgb(172, 172, 172);
-    letter-spacing: 0.5px;
-  }
-  .link-cartas-blog {
-    margin-right: 20px;
-    position: relative;
-  }
-  .fuerte {
-    color: black;
+  .textos-comunes {
+    max-width: 100%;
+    margin: 0;
+    text-align: justify;
+    line-height: 2.1;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
   }
   .linea {
-    width: 1px;
-    height: 80%;
-    background: rgb(172, 172, 172);
     position: absolute;
     right: -10px;
     top: 0;
+    width: 1px;
+    height: 80%;
     transform: skew(-15deg);
-  }
-  .textos-comunes {
-    text-align: justify;
-    max-width: 100%;
-    margin: 0;
-    line-height: 2.1;
+    background: rgb(172, 172, 172);
   }
   .btn-principal {
-    margin: 20px 0px;
     height: auto;
     width: 50%;
     max-width: 150px;
-    padding: 10px 0px;
+    margin: 20px 0px;
     margin-left: auto;
+    padding: 10px 0px;
     @include flexbox(row, center, center);
+    border: 1px solid rgb(172, 172, 172);
     background: none;
     color: black;
-    border: 1px solid rgb(172, 172, 172);
   }
 }
+
+.nav-noticias {
+  height: 30px;
+  width: 210px;
+  margin: 50px auto 0px;
+  @include flexbox(row, flex-start, center);
+  .links-nav-noticias {
+    height: 100%;
+    width: 30px;
+    @include flexbox(row, center, center);
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+}
+
+//QUERYS NOTICIAS (PAG-SEC)
 @media (min-width: 1024px) {
   .cartas-blog-pag-sec {
     @include flexbox(row, center, flex-start);
@@ -1423,39 +1447,14 @@ ul {
   }
 }
 
-.nav-blog {
-  @include flexbox(row, flex-start, center);
-  height: 30px;
-  width: 210px;
-  margin: 50px auto 0px;
-  .links-nav-blog {
-    @include flexbox(row, center, center);
-    height: 100%;
-    width: 30px;
-    border: 1px solid rgb(221, 221, 221);
-    font-size: 0.75rem;
-    font-weight: 500;
-  }
-}
-.footer-pag-sec {
-  background: rgb(250, 250, 250);
-  border-top: 1px solid rgb(228, 228, 228);
-}
-@media (min-width: 1024px) {
-  .footer-pag-sec {
-    justify-content: space-between;
-  }
-}
-
-//ESTILOS TRABAJOS
-
+//ESTILOS TRABAJOS (PAG-SEC)
 .contenido-trabajos {
   .contenedor-gral-pag-sec {
+    max-width: 600px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 125vw 40vw repeat(4, 125vw) 40vw repeat(4, 125vw) 40vw;
     row-gap: 30px;
-    max-width: 600px;
   }
   .img-trabajos-grandes {
     background: red;
@@ -1464,6 +1463,8 @@ ul {
     background: blue;
   }
 }
+
+//QUERYS TRABAJOS
 @media (min-width: 600px) {
   .contenido-trabajos {
     .contenedor-gral-pag-sec {
@@ -1471,15 +1472,14 @@ ul {
     }
   }
 }
-
 @media (min-width: 768px) {
   .contenido-trabajos {
     .contenedor-gral-pag-sec {
+      max-width: 1440px;
+      padding: 100px 15px;
       grid-template-columns: repeat(2, auto);
       grid-template-rows: repeat(11, 300px);
       column-gap: 20px;
-      max-width: 1440px;
-      padding: 100px 15px;
     }
     .img-trabajos-grandes:nth-child(1) {
       grid-row: 1 / 3;
@@ -1516,9 +1516,9 @@ ul {
   .contenido-trabajos {
     padding: 0 40px;
     .contenedor-gral-pag-sec {
+      padding: 100px 0px;
       grid-template-columns: repeat(4, auto);
       grid-template-rows: repeat(7, 250px);
-      padding: 100px 0px;
     }
     .img-trabajos-grandes:nth-child(1) {
       grid-row: 1 / 3;
@@ -1566,16 +1566,15 @@ ul {
   }
 }
 
-//PAGINA BLOG
-
+//ESTILOS BLOG (PAG-SEC)
 .swiper-blog-principal {
-  overflow-x: hidden;
-  min-height: 200px;
   height: 60vw;
+  min-height: 200px;
   max-height: 450px;
   width: 100%;
   max-width: 650px;
   margin: 0 auto;
+  overflow-x: hidden;
   grid-column: 1 / 3;
 }
 .contenido-blog {
@@ -1587,40 +1586,18 @@ ul {
     margin: 0 auto;
     grid-column: 1 / 3;
   }
-  .titulo-descripcion-blog {
-    text-transform: uppercase;
-    font-size: clamp(1.2rem, 4.5vw, 2rem);
-    font-weight: 600;
-    letter-spacing: 0px;
-    line-height: 1.4;
+  .titulos-cartas-pag-sec {
     margin: 20px 0px;
+    font-size: clamp(1.2rem, 4.5vw, 2rem);
   }
   .textos-comunes {
+    max-width: 100%;
     text-align: justify;
     font-size: clamp(0.7rem, 2vw, 0.9rem);
-    max-width: 100%;
-  }
-  .nav-blog-principal {
-    width: 100%;
-    margin: 20px 0px 10px;
-    @include flexbox(row, flex-start, center);
-    font-size: clamp(0.7rem, 2vw, 0.9rem);
-    text-transform: uppercase;
-    font-weight: 600;
-    color: rgb(172, 172, 172);
-    letter-spacing: 0.5px;
-    position: relative;
-  }
-  .links-blog-principal {
-    margin-right: 20px;
-    position: relative;
-  }
-  .fuerte {
-    color: black;
   }
   .tags {
     margin: 0 auto;
-    .titulo-descripcion-blog {
+    .titulos-cartas-pag-sec {
       font-size: 1.2rem;
     }
     .links-tags {
@@ -1628,52 +1605,52 @@ ul {
     }
   }
   .lista-tags {
+    width: 100%;
     @include flexbox(row, flex-start, flex-start);
     flex-wrap: wrap;
-    width: 100%;
   }
   .links-tags {
-    background: rgb(240, 240, 240);
     margin: 3px 2px;
     padding: 8px 13px;
+    background: rgb(240, 240, 240);
     letter-spacing: 0px;
   }
   .compartir {
-    padding: 50px 0px;
     position: relative;
-    .titulo-descripcion-blog {
+    padding: 50px 0px;
+    .titulos-cartas-pag-sec {
       font-size: 1.2rem;
     }
   }
   .compartir::after {
     content: "";
+    position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
     height: 3px;
     background: rgb(204, 204, 204);
-    position: absolute;
   }
   .lista-compartir {
+    width: 100%;
     @include flexbox(row, flex-start, flex-start);
     flex-wrap: wrap;
-    width: 100%;
   }
   .links-compartir {
-    border: 1px solid rgb(204, 204, 204);
-    color: rgb(124, 124, 124);
     width: 35px;
     height: 35px;
-    @include flexbox(row, center, center);
     margin-right: 5px;
+    @include flexbox(row, center, center);
+    color: rgb(124, 124, 124);
     font-size: 16px;
+    border: 1px solid rgb(204, 204, 204);
   }
   .swiper-blog-post-relacionados {
-    overflow-x: hidden;
+    position: relative;
     width: 100%;
+    overflow-x: hidden;
     margin-top: 50px;
     padding-top: 70px;
-    position: relative;
   }
   .img-post-relacionados {
     width: 100%;
@@ -1681,10 +1658,10 @@ ul {
     background: red;
   }
   .contenido-post-relacionados {
-    padding: 0px 20px;
     width: 100%;
     height: 100%;
-    .titulo-descripcion-blog {
+    padding: 0px 20px;
+    .titulos-cartas-pag-sec {
       line-height: 1.7;
       font-size: clamp(1rem, 1.5vw, 1.2rem);
       letter-spacing: 1px;
@@ -1693,81 +1670,73 @@ ul {
       line-height: 2.2;
     }
     .btn-principal {
-      margin: 0px 0px 20px 0px;
       width: 60%;
       height: 45px;
+      margin: 0px 0px 20px 0px;
       padding: 0px;
       justify-content: center;
       font-size: 0.9rem;
     }
   }
   .slide-blog-post-relacionados {
-    @include flexbox(column, flex-start, flex-start);
     min-height: 450px;
+    @include flexbox(column, flex-start, flex-start);
     background: rgb(240, 240, 240);
   }
-  .swiper-btn-post {
+  .btn-nav-swiper {
     top: 25px;
-    background: black;
     right: 0;
-    width: 40px;
-    height: 40px;
-    @include flexbox(row, center, center);
-  }
-  .swiper-btn-post::after {
-    font-size: 0.6rem;
-    color: white;
   }
   .swiper-button-prev {
     margin-left: auto;
     margin-right: 50px;
   }
   .carta-comentarios {
-    @include flexbox(row, flex-start, flex-start);
     margin-top: 50px;
+    @include flexbox(row, flex-start, flex-start);
   }
   .img-user-comentarios {
-    background: black;
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     margin: 0px 10px;
+    background: black;
+    border-radius: 50%;
   }
   .contenido-comentarios {
     padding: 0px 10px 0px 0px;
-    .titulo-descripcion-blog {
-      font-size: 1rem;
+    .titulos-cartas-pag-sec {
       margin: 0px 0px 15px 0px;
+      font-size: 1rem;
     }
-    .nav-blog-principal {
+    .datos-cartas-pag-sec {
       margin: 15px 0px;
       font-size: 0.75rem;
     }
     .textos-comunes {
-      text-align: left;
       margin-top: 15px;
+      text-align: left;
     }
   }
   .form-comentarios {
     width: 100%;
-    @include flexbox(column, flex-start, flex-start);
-    background: rgb(247, 247, 247);
     padding: 20px;
     margin-bottom: 100px;
+    @include flexbox(column, flex-start, flex-start);
+    background: rgb(247, 247, 247);
     .btn-principal {
-      margin: 20px 0px 0px 0px;
       width: 100%;
       max-width: 250px;
-      justify-content: center;
+      margin: 20px 0px 0px 0px;
       padding: 0;
+      justify-content: center;
     }
   }
   .inputs-form-comentarios {
     width: 100%;
     height: 40px;
     margin: 20px 0px;
-    border: none;
     background: rgb(247, 247, 247);
+    border: none;
     border-bottom: 4px solid rgb(165, 165, 165);
     font-size: 0.75rem;
     outline: none;
@@ -1778,40 +1747,43 @@ ul {
     }
   }
   .textarea {
-    resize: none;
     height: 100px;
+    resize: none;
   }
 }
 
-//QUERYS CONTENIDO PRINCIPAL
+//QUERYS BLOG (PAG-SEC)
+
+//querys contenido principal
 @media (min-width: 768px) {
   .contenido-blog {
     .contenido-blog-principal {
+      position: relative;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 3;
-      position: relative;
+      padding-bottom: 50px;
     }
     .contenido-blog-principal:after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 0px;
       left: 5%;
-      background: rgb(204, 204, 204);
       height: 3px;
       width: 90%;
+      background: rgb(204, 204, 204);
     }
     .descripcion-post-principal-blog {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 3;
-      .titulo-descripcion-blog {
+      .titulos-cartas-pag-sec {
         grid-column: 1 / 3;
       }
       .textos-comunes {
         padding: 0px 50px 0px 0px;
       }
-      .nav-blog-principal {
+      .datos-cartas-pag-sec {
         grid-column: 1 / 3;
         margin-top: 0px;
       }
@@ -1832,8 +1804,7 @@ ul {
   }
 }
 
-//QUERYS POST RELACIONADOS
-
+//querys post relacionados
 @media (min-width: 480px) {
   .contenido-blog {
     .img-post-relacionados {
@@ -1853,8 +1824,7 @@ ul {
   }
 }
 
-//QUERYS POST RELACIONADOS
-
+//querys comentarios
 @media (min-width: 768px) {
   .contenido-blog {
     .contenido-comentarios {
@@ -1865,7 +1835,7 @@ ul {
     .form-comentarios {
       @include flexbox(row, flex-start, flex-start);
       flex-wrap: wrap;
-      .titulo-descripcion-blog {
+      .titulos-cartas-pag-sec {
         width: 100%;
       }
     }
