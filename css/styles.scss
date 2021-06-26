@@ -180,6 +180,11 @@ ul {
   height: 70px;
   @include flexbox(row, flex-start, center);
   padding: 0px 15px;
+  background: white;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  top: 0;
   .logo {
     width: 40%;
     max-width: 116px;
@@ -248,6 +253,7 @@ ul {
 .swiper-container {
   width: 100%;
   height: calc(100vh - 70px);
+  margin-top: 70px;
   .swiper-button-white {
     display: none;
   }
@@ -530,8 +536,8 @@ ul {
     }
   }
 }
-//NOSOTROS
 
+//NOSOTROS
 .swiper-container-cuatro {
   background: red;
   height: 100%;
@@ -552,6 +558,8 @@ ul {
   position: relative;
   margin-bottom: 80px;
 }
+
+//QUERYS NOSOTROS
 @media (min-width: 620px) {
   .after-swiper-nosotros {
     width: 85%;
@@ -636,29 +644,29 @@ ul {
   }
 }
 .carta-principal {
+  max-width: 400px;
+  padding-bottom: 40px;
+  margin: 0 auto;
   color: white;
   text-align: center;
-  padding-bottom: 40px;
-  max-width: 400px;
-  margin: 0 auto;
   .imagen-persona-principal {
     width: 100%;
-    min-height: 300px;
     height: 85vw;
+    min-height: 300px;
     max-height: 400px;
     background: white;
   }
   .nombre-persona-principal {
-    text-transform: uppercase;
     margin: 30px 0px;
+    text-transform: uppercase;
     font-weight: 500;
     font-size: clamp(1.375rem, 2.6vw, 2rem);
   }
   .cargo-persona-principal {
+    margin-bottom: 30px;
     text-transform: capitalize;
     font-weight: 400;
     font-size: 1.375rem;
-    margin-bottom: 30px;
   }
   .redes-persona-principal {
     width: 100%;
@@ -674,52 +682,55 @@ ul {
   }
 }
 .contenido-equipo {
+  position: relative;
+  z-index: -2; //PARA QUE FUNCIONE EL Z-INDEX DEL PSEUDO DE CARTA EQUIPO
+  padding: 15px 15px;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: repeat(4, 1fr);
   row-gap: 30px;
   background: #f6f7f8;
   color: red;
-  padding: 15px 15px;
   .carta-equipo {
-    text-align: center;
     position: relative;
-    background: white;
-    background: black;
-    padding-bottom: 20px;
     width: 100%;
     max-width: 300px;
+    padding-bottom: 20px;
     margin: auto;
+    background: aqua;
+    text-align: center;
   }
-  .carta-equipo::before {
+  .carta-equipo::after {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 50px;
+    z-index: -1;
     left: -5px;
     bottom: -5px;
+    width: 50px;
+    height: 50px;
     background: black;
-    z-index: -1;
   }
 
   .img-persona {
-    background: red;
     width: 100%;
-    min-height: 280px;
     height: 85vw;
+    min-height: 280px;
     max-height: 340px;
+    background: red;
   }
   .nombre-persona {
+    margin: 15px 0 5px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1rem;
-    margin: 15px 0 5px;
   }
   .cargo-persona {
     text-transform: capitalize;
     font-size: 0.75rem;
   }
 }
+
+//QUERYS EQUIPO
 @media (min-width: 600px) {
   .contenido-equipo {
     display: grid;
@@ -745,7 +756,7 @@ ul {
     }
     .carta-grande {
       width: 100%;
-      max-width: 555px;
+      max-width: 650px;
       margin-left: auto;
     }
   }
@@ -753,8 +764,8 @@ ul {
     max-width: 650px;
     margin-right: 0;
     .imagen-persona-principal {
-      max-height: 650px;
       height: 55vw;
+      max-height: 650px;
     }
   }
   .contenido-equipo {
@@ -763,7 +774,6 @@ ul {
     .carta-equipo {
       margin: 0 auto 0 0;
     }
-
     .img-persona {
       height: 25vw;
     }
@@ -777,42 +787,39 @@ ul {
 
 //BLOG
 .blog {
-  padding: 100px 15px 15px;
   .contenedor-gral {
     max-width: 720px;
     margin: 0 auto;
-    padding: 0px;
   }
   .header-secciones {
     margin-bottom: 100px;
   }
 }
 .carta-blog {
+  width: 100%;
+  height: 280px;
+  margin-bottom: 40px;
   color: white;
   background: rgb(255, 0, 0);
-  margin-bottom: 40px;
-  height: 280px;
-  width: 100%;
   @include flexbox(row, flex-start, flex-end);
-
   .contenido-carta {
-    padding: 20px 10px 20px 40px;
     position: relative;
-    background: black;
     width: 90%;
     height: 40%;
-    margin-bottom: 30px;
     max-width: 270px;
+    padding: 20px 10px 20px 40px;
+    margin-bottom: 30px;
     margin-left: 20px;
+    background: black;
   }
   .fecha {
     position: absolute;
     left: -25px;
     top: 45px;
     transform: rotate(-90deg);
+    color: white;
     text-transform: uppercase;
     font-weight: 900;
-    color: white;
     font-size: 0.75rem;
   }
   .titulo-carta-blog {
@@ -821,31 +828,31 @@ ul {
   }
 }
 .carta-blog-grande {
-  color: white;
-  background: rgb(255, 0, 0);
+  width: 100%;
   margin-bottom: 40px;
   height: 530px;
-  width: 100%;
-  @include flexbox(row, flex-end, flex-end);
   padding-bottom: 30px;
+  @include flexbox(row, flex-end, flex-end);
+  color: white;
+  background: rgb(255, 0, 0);
   .contenido-carta-grande {
-    border: 15px solid rgb(0, 0, 0);
-    padding: 15px;
     position: relative;
     width: 80%;
-    margin-right: 15px;
     min-height: 390px;
+    padding: 15px;
+    margin-right: 15px;
+    border: 15px solid rgb(0, 0, 0);
   }
   .titulo-carta-blog {
+    max-width: 350px;
     text-transform: uppercase;
     font-size: clamp(1.125rem, 2.5vw, 1.875rem);
-    max-width: 350px;
   }
   .descripcion-carta-blog {
-    font-size: 0.75rem;
-    margin: 20px 0px;
-    line-height: 2;
     max-width: 400px;
+    margin: 20px 0px;
+    font-size: 0.75rem;
+    line-height: 2;
   }
   .btn-principal {
     margin-bottom: 0px;
@@ -863,6 +870,8 @@ ul {
     color: white;
   }
 }
+
+//QUERYS BLOG
 @media (min-width: 1024px) {
   .blog {
     padding: 100px 0px 15px;
@@ -912,23 +921,23 @@ ul {
 
 //DATOS
 .datos {
+  padding-bottom: 80px;
   background-color: black;
   color: white;
-  padding-bottom: 80px;
 }
 .carta-datos {
-  padding: 20px 20px 40px;
-  border: 15px solid rgb(255, 255, 255);
   position: relative;
+  padding: 20px 20px 40px;
   margin-bottom: 70px;
+  border: 15px solid rgb(255, 255, 255);
   .sub-textos {
     text-transform: uppercase;
     font-size: clamp(1.5rem, 7.5vw, 2.5rem);
   }
   .titulos-principales {
+    margin: 10px 0px 20px;
     text-transform: uppercase;
     font-size: clamp(1.5rem, 7.5vw, 2.5rem);
-    margin: 10px 0px 20px;
     font-weight: 600;
   }
   .descripcion-carta-datos {
@@ -947,34 +956,35 @@ ul {
   height: 50%;
   background: black;
 }
-
 .contenido-numeros {
   @include flexbox(column, center, center);
   margin-bottom: 50px;
-  .titulo-carta-blog {
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+  .titulo-datos {
     position: relative;
     width: 120px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-size: clamp(2.3rem, 4vw, 2.7rem);
+    letter-spacing: 1px;
+    font-weight: 600;
     text-align: center;
   }
-  .titulo-carta-blog::after {
+  .titulo-datos::after {
     content: "";
     position: absolute;
     left: 25%;
     bottom: 0;
-    background: white;
     width: 50%;
     height: 3px;
+    background: white;
   }
   .mini-texto {
     text-transform: uppercase;
     font-size: 0.75rem;
   }
 }
+
+//QUERYS DATOS
 @media (min-width: 420px) {
   .carta-datos {
     padding: 50px 30px 50px 40px;
@@ -1015,8 +1025,8 @@ ul {
 
 //TESTIMONIOS
 .swiper-container-cinco {
-  width: 100%;
   position: relative;
+  width: 100%;
   margin: 100px 0px 20px;
   padding-bottom: 80px;
   overflow-x: hidden;
@@ -1025,39 +1035,39 @@ ul {
     margin-top: 50px;
   }
   .swiper-pagination-bullet {
+    width: 20px !important; //IMPORTANT PORQUE SWIPER NO ME DEJA DE OTRA FORMA
     background: black;
     border-radius: 0;
-    width: 20px !important;
   }
 }
 .carta-testimonio {
   position: relative;
-  @include flexbox(column, flex-start, flex-start);
   padding: 3px 0px 0px 3px;
+  @include flexbox(column, flex-start, flex-start);
   .img-testimonio {
-    background: white;
-    border: 1px solid black;
     width: 80px;
     height: 80px;
+    background: white;
+    border: 1px solid black;
   }
   .contenido-carta-testimonio {
+    width: 98%;
+    padding: 40px 20px 30px;
     background: white;
     box-shadow: 5px 5px 5px rgb(228, 228, 228);
-    padding: 40px 20px 30px;
-    width: 98%;
   }
   .nombre-persona-testimonio {
     text-transform: uppercase;
     font-weight: 700;
   }
   .titulo-persona-testimonio {
-    font-size: 0.75rem;
     margin-bottom: 20px;
+    font-size: 0.75rem;
   }
   .icono {
-    font-size: 1.2rem;
     width: 30px;
     height: 30px;
+    font-size: 1.2rem;
   }
   .contenido-persona-testimonio {
     font-size: 0.75rem;
@@ -1066,14 +1076,15 @@ ul {
   &::before {
     content: "";
     position: absolute;
+    z-index: -1;
     left: 0px;
     top: 0px;
     width: 40px;
     height: 30px;
     background: black;
-    z-index: -1;
   }
 }
+//QUERYS TESTIMONIOS
 @media (min-width: 1024px) {
   .testimonios {
     .contenedor-gral {
@@ -1085,8 +1096,8 @@ ul {
 
 //CLIENTES
 .black-bg {
-  background: black;
   color: white;
+  background: black;
   .titulos-after:after {
     background: white;
   }
@@ -1097,11 +1108,10 @@ ul {
   }
 }
 .swiper-container-seis {
-  overflow-x: hidden;
   position: relative;
   overflow-x: hidden;
-  color: black;
   height: 180px;
+  color: black;
   .swiper-pagination {
     background: black;
   }
@@ -1127,6 +1137,7 @@ ul {
   }
 }
 
+//QUERYS CLIENTES
 @media (min-width: 1024px) {
   .clientes {
     .contenedor-gral {
@@ -1150,15 +1161,15 @@ ul {
   font-style: italic;
   font-size: 0.813rem;
   .logo-footer {
-    border: 1px solid black;
     width: 150px;
     height: 60px;
     margin: 0 auto 20px;
+    border: 1px solid black;
   }
   .logo-f {
-    background: red;
     width: 150px;
     height: 60px;
+    background: red;
   }
   .copy {
     text-align: center;
@@ -1167,11 +1178,11 @@ ul {
     @include flexbox(column, center, center);
   }
   .links-footer {
-    padding: 5px 10px;
-    min-width: 250px;
-    @include flexbox(row, center, center);
     position: relative;
+    min-width: 250px;
+    padding: 5px 10px;
     margin: 20px 0px 10px;
+    @include flexbox(row, center, center);
     &::after {
       content: "";
       position: absolute;
@@ -1183,6 +1194,8 @@ ul {
     }
   }
 }
+
+//QUERYSS FOOTER
 @media (min-width: 1024px) {
   .footer-principal {
     @include flexbox(row, center, center);
@@ -1208,14 +1221,13 @@ ul {
   @include flexbox(row, center, center);
 }
 
-//ESTILOS SECCIONES
+//ESTILOS PAGINAS SECUNDARIAS
 
-//ESTILOS NOTICIAS
-
+//NOTICIAS-PAG-SEC
 .header-paginas-secundarias {
-  background: black;
   padding-top: 50px;
   padding-bottom: 20px;
+  background: black;
   .contenedor-gral-pag-sec {
     width: 100%;
     margin: 0 auto;

@@ -229,6 +229,11 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 0px 15px;
+  background: white;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  top: 0;
 }
 
 .nav-principal .logo {
@@ -347,6 +352,7 @@ ul {
 .swiper-container {
   width: 100%;
   height: calc(100vh - 70px);
+  margin-top: 70px;
 }
 
 .swiper-container .swiper-button-white {
@@ -843,33 +849,33 @@ ul {
 }
 
 .carta-principal {
+  max-width: 400px;
+  padding-bottom: 40px;
+  margin: 0 auto;
   color: white;
   text-align: center;
-  padding-bottom: 40px;
-  max-width: 400px;
-  margin: 0 auto;
 }
 
 .carta-principal .imagen-persona-principal {
   width: 100%;
-  min-height: 300px;
   height: 85vw;
+  min-height: 300px;
   max-height: 400px;
   background: white;
 }
 
 .carta-principal .nombre-persona-principal {
-  text-transform: uppercase;
   margin: 30px 0px;
+  text-transform: uppercase;
   font-weight: 500;
   font-size: clamp(1.375rem, 2.6vw, 2rem);
 }
 
 .carta-principal .cargo-persona-principal {
+  margin-bottom: 30px;
   text-transform: capitalize;
   font-weight: 400;
   font-size: 1.375rem;
-  margin-bottom: 30px;
 }
 
 .carta-principal .redes-persona-principal {
@@ -911,6 +917,9 @@ ul {
 }
 
 .contenido-equipo {
+  position: relative;
+  z-index: -2;
+  padding: 15px 15px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1;
@@ -920,44 +929,42 @@ ul {
   row-gap: 30px;
   background: #f6f7f8;
   color: red;
-  padding: 15px 15px;
 }
 
 .contenido-equipo .carta-equipo {
-  text-align: center;
   position: relative;
-  background: white;
-  background: black;
-  padding-bottom: 20px;
   width: 100%;
   max-width: 300px;
+  padding-bottom: 20px;
   margin: auto;
+  background: aqua;
+  text-align: center;
 }
 
-.contenido-equipo .carta-equipo::before {
+.contenido-equipo .carta-equipo::after {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 50px;
+  z-index: -1;
   left: -5px;
   bottom: -5px;
+  width: 50px;
+  height: 50px;
   background: black;
-  z-index: -1;
 }
 
 .contenido-equipo .img-persona {
-  background: red;
   width: 100%;
-  min-height: 280px;
   height: 85vw;
+  min-height: 280px;
   max-height: 340px;
+  background: red;
 }
 
 .contenido-equipo .nombre-persona {
+  margin: 15px 0 5px;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1rem;
-  margin: 15px 0 5px;
 }
 
 .contenido-equipo .cargo-persona {
@@ -999,7 +1006,7 @@ ul {
   }
   .equipo .carta-grande {
     width: 100%;
-    max-width: 555px;
+    max-width: 650px;
     margin-left: auto;
   }
   .carta-principal {
@@ -1007,8 +1014,8 @@ ul {
     margin-right: 0;
   }
   .carta-principal .imagen-persona-principal {
-    max-height: 650px;
     height: 55vw;
+    max-height: 650px;
   }
   .contenido-equipo {
     padding: 215px 60px 215px 15px;
@@ -1030,14 +1037,9 @@ ul {
   }
 }
 
-.blog {
-  padding: 100px 15px 15px;
-}
-
 .blog .contenedor-gral {
   max-width: 720px;
   margin: 0 auto;
-  padding: 0px;
 }
 
 .blog .header-secciones {
@@ -1045,11 +1047,11 @@ ul {
 }
 
 .carta-blog {
+  width: 100%;
+  height: 280px;
+  margin-bottom: 40px;
   color: white;
   background: red;
-  margin-bottom: 40px;
-  height: 280px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1066,14 +1068,14 @@ ul {
 }
 
 .carta-blog .contenido-carta {
-  padding: 20px 10px 20px 40px;
   position: relative;
-  background: black;
   width: 90%;
   height: 40%;
-  margin-bottom: 30px;
   max-width: 270px;
+  padding: 20px 10px 20px 40px;
+  margin-bottom: 30px;
   margin-left: 20px;
+  background: black;
 }
 
 .carta-blog .fecha {
@@ -1082,9 +1084,9 @@ ul {
   top: 45px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  color: white;
   text-transform: uppercase;
   font-weight: 900;
-  color: white;
   font-size: 0.75rem;
 }
 
@@ -1094,11 +1096,10 @@ ul {
 }
 
 .carta-blog-grande {
-  color: white;
-  background: red;
+  width: 100%;
   margin-bottom: 40px;
   height: 530px;
-  width: 100%;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1112,29 +1113,30 @@ ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 30px;
+  color: white;
+  background: red;
 }
 
 .carta-blog-grande .contenido-carta-grande {
-  border: 15px solid black;
-  padding: 15px;
   position: relative;
   width: 80%;
-  margin-right: 15px;
   min-height: 390px;
+  padding: 15px;
+  margin-right: 15px;
+  border: 15px solid black;
 }
 
 .carta-blog-grande .titulo-carta-blog {
+  max-width: 350px;
   text-transform: uppercase;
   font-size: clamp(1.125rem, 2.5vw, 1.875rem);
-  max-width: 350px;
 }
 
 .carta-blog-grande .descripcion-carta-blog {
-  font-size: 0.75rem;
-  margin: 20px 0px;
-  line-height: 2;
   max-width: 400px;
+  margin: 20px 0px;
+  font-size: 0.75rem;
+  line-height: 2;
 }
 
 .carta-blog-grande .btn-principal {
@@ -1212,16 +1214,16 @@ ul {
 }
 
 .datos {
+  padding-bottom: 80px;
   background-color: black;
   color: white;
-  padding-bottom: 80px;
 }
 
 .carta-datos {
-  padding: 20px 20px 40px;
-  border: 15px solid white;
   position: relative;
+  padding: 20px 20px 40px;
   margin-bottom: 70px;
+  border: 15px solid white;
 }
 
 .carta-datos .sub-textos {
@@ -1230,9 +1232,9 @@ ul {
 }
 
 .carta-datos .titulos-principales {
+  margin: 10px 0px 20px;
   text-transform: uppercase;
   font-size: clamp(1.5rem, 7.5vw, 2.5rem);
-  margin: 10px 0px 20px;
   font-weight: 600;
 }
 
@@ -1270,25 +1272,25 @@ ul {
   margin-bottom: 50px;
 }
 
-.contenido-numeros .titulo-carta-blog {
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+.contenido-numeros .titulo-datos {
   position: relative;
   width: 120px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  font-size: clamp(2.3rem, 4vw, 2.7rem);
+  letter-spacing: 1px;
+  font-weight: 600;
   text-align: center;
 }
 
-.contenido-numeros .titulo-carta-blog::after {
+.contenido-numeros .titulo-datos::after {
   content: "";
   position: absolute;
   left: 25%;
   bottom: 0;
-  background: white;
   width: 50%;
   height: 3px;
+  background: white;
 }
 
 .contenido-numeros .mini-texto {
@@ -1356,8 +1358,8 @@ ul {
 }
 
 .swiper-container-cinco {
-  width: 100%;
   position: relative;
+  width: 100%;
   margin: 100px 0px 20px;
   padding-bottom: 80px;
   overflow-x: hidden;
@@ -1368,13 +1370,14 @@ ul {
 }
 
 .swiper-container-cinco .swiper-pagination-bullet {
+  width: 20px !important;
   background: black;
   border-radius: 0;
-  width: 20px !important;
 }
 
 .carta-testimonio {
   position: relative;
+  padding: 3px 0px 0px 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1388,22 +1391,21 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 3px 0px 0px 3px;
 }
 
 .carta-testimonio .img-testimonio {
-  background: white;
-  border: 1px solid black;
   width: 80px;
   height: 80px;
+  background: white;
+  border: 1px solid black;
 }
 
 .carta-testimonio .contenido-carta-testimonio {
+  width: 98%;
+  padding: 40px 20px 30px;
   background: white;
   -webkit-box-shadow: 5px 5px 5px #e4e4e4;
           box-shadow: 5px 5px 5px #e4e4e4;
-  padding: 40px 20px 30px;
-  width: 98%;
 }
 
 .carta-testimonio .nombre-persona-testimonio {
@@ -1412,14 +1414,14 @@ ul {
 }
 
 .carta-testimonio .titulo-persona-testimonio {
-  font-size: 0.75rem;
   margin-bottom: 20px;
+  font-size: 0.75rem;
 }
 
 .carta-testimonio .icono {
-  font-size: 1.2rem;
   width: 30px;
   height: 30px;
+  font-size: 1.2rem;
 }
 
 .carta-testimonio .contenido-persona-testimonio {
@@ -1430,12 +1432,12 @@ ul {
 .carta-testimonio::before {
   content: "";
   position: absolute;
+  z-index: -1;
   left: 0px;
   top: 0px;
   width: 40px;
   height: 30px;
   background: black;
-  z-index: -1;
 }
 
 @media (min-width: 1024px) {
@@ -1446,8 +1448,8 @@ ul {
 }
 
 .black-bg {
-  background: black;
   color: white;
+  background: black;
 }
 
 .black-bg .titulos-after:after {
@@ -1459,11 +1461,10 @@ ul {
 }
 
 .swiper-container-seis {
-  overflow-x: hidden;
   position: relative;
   overflow-x: hidden;
-  color: black;
   height: 180px;
+  color: black;
 }
 
 .swiper-container-seis .swiper-pagination {
@@ -1521,16 +1522,16 @@ ul {
 }
 
 .footer-principal .logo-footer {
-  border: 1px solid black;
   width: 150px;
   height: 60px;
   margin: 0 auto 20px;
+  border: 1px solid black;
 }
 
 .footer-principal .logo-f {
-  background: red;
   width: 150px;
   height: 60px;
+  background: red;
 }
 
 .footer-principal .copy {
@@ -1554,8 +1555,10 @@ ul {
 }
 
 .footer-principal .links-footer {
-  padding: 5px 10px;
+  position: relative;
   min-width: 250px;
+  padding: 5px 10px;
+  margin: 20px 0px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1569,8 +1572,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  margin: 20px 0px 10px;
 }
 
 .footer-principal .links-footer::after {
@@ -1636,9 +1637,9 @@ ul {
 }
 
 .header-paginas-secundarias {
-  background: black;
   padding-top: 50px;
   padding-bottom: 20px;
+  background: black;
 }
 
 .header-paginas-secundarias .contenedor-gral-pag-sec {
