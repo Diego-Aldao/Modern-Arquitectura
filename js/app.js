@@ -23,7 +23,6 @@ var swiper = new Swiper('.swiper-container-dos', {
   });
 
 var swiper = new Swiper('.swiper-container-tres',{
-    autoplay:true,
     speed: 100,
     loop:true,
     breakpoints:{
@@ -120,3 +119,24 @@ var swiper = new Swiper('.swiper-container-seis', {
       },
     }
   });
+
+
+  //ANIMACIONES GSAP
+  const slideProyectos = document.querySelectorAll(".slide-proyectos-animada");
+
+ slideProyectos.forEach(slide => {
+  slide.addEventListener("mouseenter", () =>{
+    gsap.to(slide, {
+      opacity: 1,
+      duration: 0.5,
+    });
+  });
+
+  slide.addEventListener("mouseleave", () =>{
+    gsap.to(slide, {
+      opacity: 0,
+      duration: 0.5,
+    });
+  });
+   
+ });
