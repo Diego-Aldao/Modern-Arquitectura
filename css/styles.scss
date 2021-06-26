@@ -1188,7 +1188,6 @@ ul {
     width: 150px;
     height: 60px;
     margin: 0 auto 20px;
-    border: 1px solid black;
   }
   .logo-f {
     width: 150px;
@@ -1230,6 +1229,8 @@ ul {
       margin-left: 20px;
       margin-right: 20px;
       max-width: 380px;
+    }
+    .logo-footer {
     }
   }
 }
@@ -1703,16 +1704,16 @@ ul {
   }
   .carta-comentarios {
     margin-top: 50px;
-    @include flexbox(row, flex-start, flex-start);
+    @include flexbox(row, center, flex-start);
   }
   .img-user-comentarios {
     width: 50px;
     height: 50px;
-    margin: 0px 10px;
     background: black;
-    border-radius: 50%;
+    margin: 0 10px 0px 0px;
   }
   .contenido-comentarios {
+    width: calc(100% - 50px);
     padding: 0px 10px 0px 0px;
     .titulos-cartas-pag-sec {
       margin: 0px 0px 15px 0px;

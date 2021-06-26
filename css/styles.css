@@ -1565,7 +1565,6 @@ ul {
   width: 150px;
   height: 60px;
   margin: 0 auto 20px;
-  border: 1px solid black;
 }
 
 .footer-principal .logo-f {
@@ -2359,9 +2358,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -2370,12 +2369,12 @@ ul {
 .contenido-blog .img-user-comentarios {
   width: 50px;
   height: 50px;
-  margin: 0px 10px;
   background: black;
-  border-radius: 50%;
+  margin: 0 10px 0px 0px;
 }
 
 .contenido-blog .contenido-comentarios {
+  width: calc(100% - 50px);
   padding: 0px 10px 0px 0px;
 }
 
