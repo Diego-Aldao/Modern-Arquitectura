@@ -579,7 +579,7 @@ ul {
     margin-left: auto;
     position: relative;
   }
-  .after-swiper:after {
+  .after-swiper::after {
     content: "";
     position: absolute;
     left: -50px;
@@ -876,7 +876,7 @@ ul {
 }
 
 .swiper-container-cuatro .btn-nav-swiper {
-  top: 59vw;
+  top: 120%;
   left: 0;
 }
 
@@ -885,21 +885,136 @@ ul {
   margin-right: auto;
 }
 
+.swiper-container-cuatro .slide-nosotros-animada {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.815)));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.815));
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.swiper-container-cuatro .contenido-slide-nosotros-animada {
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+  position: relative;
+  top: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.swiper-container-cuatro .contenido-slide-nosotros-animada:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 15px;
+  width: 90px;
+  height: 4px;
+  background: white;
+}
+
+.swiper-container-cuatro .contenido-slide-nosotros-animada:before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  width: 4px;
+  height: 90px;
+  background: white;
+}
+
+.swiper-container-cuatro .titulos-nosotros {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.swiper-container-cuatro .textos-comunes {
+  font-size: 0.8rem;
+  margin-bottom: 25px;
+  overflow: scroll;
+  width: 100%;
+  height: 7vw;
+  max-height: 100px;
+  max-width: 95%;
+  margin: 0;
+}
+
+.swiper-container-cuatro:hover .slide-nosotros-animada {
+  top: 0;
+}
+
+.swiper-container-cuatro:hover .contenido-slide-nosotros-animada {
+  top: 0;
+}
+
 .after-swiper-nosotros {
   margin-bottom: 50px;
-  height: 50vw;
+  height: 55vw;
   margin-left: auto;
   position: relative;
   margin-bottom: 80px;
+}
+
+@media (min-width: 460px) {
+  .swiper-container-cuatro .contenido-slide-nosotros-animada {
+    padding-left: 50px;
+    padding-bottom: 60px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .swiper-container-cuatro .contenido-slide-nosotros-animada:after {
+    bottom: 35px;
+    height: 6px;
+    left: 10px;
+    width: 110px;
+  }
+  .swiper-container-cuatro .contenido-slide-nosotros-animada:before {
+    bottom: 10px;
+    width: 6px;
+    left: 30px;
+    height: 110px;
+  }
+  .swiper-container-cuatro .titulos-nosotros {
+    font-size: 1.8rem;
+  }
+  .swiper-container-cuatro .textos-comunes {
+    height: auto;
+    width: 95%;
+    text-align: bottom;
+  }
+  .swiper-container-cuatro .btn-nav-swiper {
+    top: 110%;
+    left: 0;
+  }
 }
 
 @media (min-width: 620px) {
   .after-swiper-nosotros {
     width: 85%;
     margin: 120px auto 80px 0px;
-  }
-  .after-swiper-nosotros .btn-nav-swiper {
-    top: 55vw;
   }
   .after-swiper-nosotros:after {
     content: "";
@@ -931,9 +1046,6 @@ ul {
   .after-swiper-nosotros {
     height: 40vw;
   }
-  .after-swiper-nosotros .btn-nav-swiper {
-    top: 45vw;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -948,12 +1060,9 @@ ul {
     margin: 0 auto;
   }
   .after-swiper-nosotros {
-    width: 75%;
-    height: 25vw;
+    width: 80%;
+    height: 30vw;
     margin: 50px auto 150px;
-  }
-  .after-swiper-nosotros .btn-nav-swiper {
-    top: 28vw;
   }
 }
 
@@ -977,9 +1086,7 @@ ul {
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-column: 3 / 5;
-  }
-  .after-swiper-nosotros .btn-nav-swiper {
-    top: 23vw;
+    margin: 50px auto 150px 0px;
   }
 }
 

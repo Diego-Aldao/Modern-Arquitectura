@@ -431,7 +431,7 @@ ul {
     margin-left: auto;
     position: relative;
   }
-  .after-swiper:after {
+  .after-swiper::after {
     content: "";
     position: absolute;
     left: -50px;
@@ -655,30 +655,124 @@ ul {
   height: 100%;
   overflow: hidden;
   .btn-nav-swiper {
-    top: 59vw;
+    top: 120%;
     left: 0;
   }
   .swiper-button-next {
     margin-left: 50px;
     margin-right: auto;
   }
+  .slide-nosotros-animada {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.815));
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 100%;
+    transition: all 0.3s;
+  }
+  .contenido-slide-nosotros-animada {
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    @include flexbox(column, flex-end, flex-start);
+    color: white;
+    position: relative;
+    top: 100%;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+  }
+  .contenido-slide-nosotros-animada:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: 15px;
+    width: 90px;
+    height: 4px;
+    background: white;
+  }
+  .contenido-slide-nosotros-animada:before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    width: 4px;
+    height: 90px;
+    background: white;
+  }
+  .titulos-nosotros {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .textos-comunes {
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+    overflow: scroll;
+    width: 100%;
+    height: 7vw;
+    max-height: 100px;
+    max-width: 95%;
+    margin: 0;
+  }
+}
+.swiper-container-cuatro:hover {
+  .slide-nosotros-animada {
+    top: 0;
+  }
+  .contenido-slide-nosotros-animada {
+    top: 0;
+  }
 }
 .after-swiper-nosotros {
   margin-bottom: 50px;
-  height: 50vw;
+  height: 55vw;
   margin-left: auto;
   position: relative;
   margin-bottom: 80px;
 }
 
 //QUERYS NOSOTROS
+
+@media (min-width: 460px) {
+  .swiper-container-cuatro {
+    .contenido-slide-nosotros-animada {
+      padding-left: 50px;
+      padding-bottom: 60px;
+      justify-content: flex-end;
+    }
+    .contenido-slide-nosotros-animada:after {
+      bottom: 35px;
+      height: 6px;
+      left: 10px;
+      width: 110px;
+    }
+    .contenido-slide-nosotros-animada:before {
+      bottom: 10px;
+      width: 6px;
+      left: 30px;
+      height: 110px;
+    }
+    .titulos-nosotros {
+      font-size: 1.8rem;
+    }
+    .textos-comunes {
+      height: auto;
+      width: 95%;
+      text-align: bottom;
+    }
+    .btn-nav-swiper {
+      top: 110%;
+      left: 0;
+    }
+  }
+}
+
 @media (min-width: 620px) {
   .after-swiper-nosotros {
     width: 85%;
     margin: 120px auto 80px 0px;
-    .btn-nav-swiper {
-      top: 55vw;
-    }
   }
   .after-swiper-nosotros:after {
     content: "";
@@ -708,9 +802,6 @@ ul {
 @media (min-width: 768px) {
   .after-swiper-nosotros {
     height: 40vw;
-    .btn-nav-swiper {
-      top: 45vw;
-    }
   }
 }
 @media (min-width: 1024px) {
@@ -722,12 +813,9 @@ ul {
     margin: 0 auto;
   }
   .after-swiper-nosotros {
-    width: 75%;
-    height: 25vw;
+    width: 80%;
+    height: 30vw;
     margin: 50px auto 150px;
-    .btn-nav-swiper {
-      top: 28vw;
-    }
   }
 }
 @media (min-width: 1240px) {
@@ -743,9 +831,7 @@ ul {
   .after-swiper-nosotros {
     height: 20vw;
     grid-column: 3 / 5;
-    .btn-nav-swiper {
-      top: 23vw;
-    }
+    margin: 50px auto 150px 0px;
   }
 }
 
