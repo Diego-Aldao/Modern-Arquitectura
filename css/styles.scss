@@ -210,6 +210,69 @@ ul {
     color: white;
   }
 }
+
+//ANIMACIONES
+
+.slides-animadas {
+  position: relative;
+  @include flexbox(column, flex-start, flex-start);
+  background: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  opacity: 0;
+  .titulos-cartas-pag-sec {
+    max-width: 250px;
+    font-size: clamp(1.3rem, 7vw, 2rem);
+  }
+  .textos-comunes {
+    margin: 0px;
+    max-width: 500px;
+    font-size: clamp(0.7rem, 4vw, 1rem);
+    line-height: 1.5;
+  }
+  .flotante-slides-animadas {
+    padding: 0px 5px 0px 15px;
+    position: absolute;
+    bottom: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    right: -40px;
+    letter-spacing: 4px;
+    transform: rotate(-90deg);
+    border-left: 3px solid rgb(255, 255, 255);
+  }
+}
+.slides-animadas::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 5%;
+  height: 2px;
+  background: white;
+  transition: all 1s;
+}
+.slides-animadas::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  width: 2px;
+  height: 5%;
+  background: white;
+  transition: all 1s;
+}
+.slides-animadas:hover {
+  //LAS ANIMACIONES DE LOS PSEUDOELEMENTOS NO LAS PUEDO HACER EN JS, POR ESO LAS HAGO ACA
+  &:before {
+    height: 95%;
+  }
+  &:after {
+    width: 92%;
+  }
+}
 //---------CONTENIDO PAGINA PRINCIPAL---------------
 
 //NAV PRINCIPAL
@@ -508,45 +571,6 @@ ul {
     height: 85%;
     background: red; //ACA VA LA IMAGEN
   }
-  .slide-proyectos-animada {
-    position: relative;
-    @include flexbox(column, flex-start, flex-start);
-    height: 100%;
-    width: 100%;
-    padding: 50px 40px 0px;
-    background: black;
-    color: white;
-    opacity: 0;
-  }
-  .slide-proyectos-animada::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    width: 5%;
-    height: 2px;
-    background: white;
-    transition: all 1s;
-  }
-  .slide-proyectos-animada::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 20px;
-    width: 2px;
-    height: 5%;
-    background: white;
-    transition: all 1s;
-  }
-  .slide-proyectos-animada:hover {
-    //LAS ANIMACIONES DE LOS PSEUDOELEMENTOS NO LAS PUEDO HACER EN JS, POR ESO LAS HAGO ACA
-    &:before {
-      height: 95%;
-    }
-    &:after {
-      width: 92%;
-    }
-  }
   .titulos-cartas-pag-sec {
     max-width: 250px;
     font-size: clamp(1.3rem, 7vw, 2rem);
@@ -556,17 +580,7 @@ ul {
     max-width: 500px;
     font-size: clamp(0.7rem, 4vw, 1rem);
   }
-  .flotante-slide-proyectos {
-    padding: 0px 5px 0px 15px;
-    position: absolute;
-    bottom: 60px;
-    text-transform: uppercase;
-    font-weight: 600;
-    right: -40px;
-    letter-spacing: 4px;
-    transform: rotate(-90deg);
-    border-left: 3px solid rgb(255, 255, 255);
-  }
+  //LAS ULTIMAS 2 CAMBIAN LAS PROPIEDADES DE LA CLASE GENERAL SLIDES-ANIMADAS
   .btn-nav-swiper {
     top: 90%;
     left: 0;
@@ -575,6 +589,8 @@ ul {
     margin-left: 50px;
   }
 }
+
+//QUERYS PROYECTOS
 @media (min-width: 453px) {
   .filtro-proyectos {
     .item-proyectos:nth-child(3)::after {
@@ -709,7 +725,7 @@ ul {
   .textos-comunes {
     font-size: 0.8rem;
     margin-bottom: 25px;
-    overflow: scroll;
+    overflow: hidden;
     width: 100%;
     height: 7vw;
     max-height: 100px;
@@ -1636,68 +1652,20 @@ ul {
   .img-trabajos-grandes {
     background: red;
     margin: 15px;
+    //USO MARGIN EN VEZ DE GAP EN EL GRID, PORQUE LO SUMA AL TOTAL DEL TAMAÑO DE LOS DIVS Y QUEDA DESFASADO
   }
   .img-trabajos-pequeños {
     background: blue;
     margin: 15px;
   }
-}
-.slide-trabajos-animada {
-  position: relative;
-  @include flexbox(column, flex-start, flex-start);
-  background: black;
-  color: white;
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-  opacity: 0;
   .textos-comunes {
-    margin: 0px;
-    max-width: 500px;
     font-size: clamp(0.7rem, 4vw, 1.5rem);
     line-height: 1.5;
   }
-  .flotante-slide-trabajos {
-    padding: 0px 5px 0px 15px;
-    position: absolute;
-    bottom: 60px;
-    text-transform: uppercase;
-    font-weight: 600;
-    right: -40px;
-    letter-spacing: 4px;
-    transform: rotate(-90deg);
-    border-left: 3px solid rgb(255, 255, 255);
+  .flotante-slides-animadas {
     font-size: 0.7rem;
   }
-}
-.slide-trabajos-animada::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 0px;
-  width: 5%;
-  height: 2px;
-  background: white;
-  transition: all 1s;
-}
-.slide-trabajos-animada::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 20px;
-  width: 2px;
-  height: 5%;
-  background: white;
-  transition: all 1s;
-}
-.slide-trabajos-animada:hover {
-  //LAS ANIMACIONES DE LOS PSEUDOELEMENTOS NO LAS PUEDO HACER EN JS, POR ESO LAS HAGO ACA
-  &:before {
-    height: 95%;
-  }
-  &:after {
-    width: 92%;
-  }
+  //LAS ULTIMAS 2 CAMBIAN PROPIEDADES DE LA CLASE GENERAL SLIDES-ANIMADAS
 }
 
 //QUERYS TRABAJOS
