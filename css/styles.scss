@@ -212,7 +212,6 @@ ul {
 }
 
 //ANIMACIONES
-
 .slides-animadas {
   position: relative;
   @include flexbox(column, flex-start, flex-start);
@@ -272,6 +271,29 @@ ul {
   &:after {
     width: 92%;
   }
+}
+
+//BACKGROUNDS
+.bg-gris {
+  background: #f6f7f8;
+}
+.black-bg {
+  color: white;
+  background: black;
+  .titulos-after:after {
+    background: white;
+  }
+}
+.forma-bg:after {
+  right: -800px;
+  bottom: -350px;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  content: "";
+  border: 40px solid rgba(191, 191, 191, 0.1);
+  transform: rotate(45deg);
+  z-index: -1;
 }
 //---------CONTENIDO PAGINA PRINCIPAL---------------
 
@@ -457,9 +479,6 @@ ul {
 }
 
 //INICIO CONTENIDO PRINCIPAL
-.contenido-principal {
-  background: #f6f7f8;
-}
 
 .swiper-container-dos {
   width: 100%;
@@ -534,6 +553,12 @@ ul {
 }
 
 //ULTIMOS PROYECTOS
+.proyectos {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
 .filtro-proyectos {
   @include flexbox(row, space-evenly, center);
   flex-wrap: wrap;
@@ -666,6 +691,9 @@ ul {
 }
 
 //NOSOTROS
+.nosotros {
+  background: url("../images/ptn-1.png");
+}
 .swiper-container-cuatro {
   background: red;
   height: 100%;
@@ -853,6 +881,9 @@ ul {
 
 //EQUIPO
 .equipo {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
   .header-secciones {
     margin-bottom: 80px;
   }
@@ -897,13 +928,12 @@ ul {
 }
 .contenido-equipo {
   position: relative;
-  z-index: -2; //PARA QUE FUNCIONE EL Z-INDEX DEL PSEUDO DE CARTA EQUIPO
+
   padding: 15px 15px;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: repeat(4, 1fr);
   row-gap: 30px;
-  background: #f6f7f8;
   color: red;
   .carta-equipo {
     position: relative;
@@ -917,7 +947,7 @@ ul {
   .carta-equipo::after {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     left: -5px;
     bottom: -5px;
     width: 50px;
@@ -983,7 +1013,7 @@ ul {
     }
   }
   .contenido-equipo {
-    padding: 215px 60px 215px 15px;
+    padding: 225px 60px 215px 15px;
     grid-template-rows: 420px 420px;
     .carta-equipo {
       margin: 0 auto 0 0;
@@ -1246,6 +1276,9 @@ ul {
 }
 
 //TESTIMONIOS
+.testimonios {
+  background: url("../images/ptn-1.png");
+}
 .swiper-container-cinco {
   position: relative;
   width: 100%;
@@ -1317,13 +1350,7 @@ ul {
 }
 
 //CLIENTES
-.black-bg {
-  color: white;
-  background: black;
-  .titulos-after:after {
-    background: white;
-  }
-}
+
 .clientes {
   .header-secciones {
     margin-bottom: 80px;
