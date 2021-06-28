@@ -1471,6 +1471,21 @@ ul {
   z-index: 9999;
   color: white;
   @include flexbox(row, center, center);
+  .fas {
+    animation: movimiento_flecha 1s infinite;
+    position: absolute;
+  }
+}
+@keyframes movimiento_flecha {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
 }
 
 //ESTILOS PAGINAS SECUNDARIAS

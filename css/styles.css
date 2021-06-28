@@ -1947,6 +1947,36 @@ ul {
           align-items: center;
 }
 
+.btn-flotante-inicio .fas {
+  -webkit-animation: movimiento_flecha 1s infinite;
+          animation: movimiento_flecha 1s infinite;
+  position: absolute;
+}
+
+@-webkit-keyframes movimiento_flecha {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+@keyframes movimiento_flecha {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
 .header-paginas-secundarias {
   padding-top: 50px;
   padding-bottom: 20px;
