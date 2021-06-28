@@ -31,6 +31,7 @@ body {
 
 img {
   width: 100%;
+  object-fit: fill;
 }
 
 .contenedor-gral {
@@ -210,6 +211,32 @@ ul {
     color: white;
   }
 }
+.btn-flotante-inicio {
+  width: 40px;
+  height: 40px;
+  background: rgb(0, 0, 0);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  color: white;
+  @include flexbox(row, center, center);
+  .fas {
+    animation: movimiento_flecha 1s infinite;
+    position: absolute;
+  }
+}
+@keyframes movimiento_flecha {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 10px;
+  }
+}
 
 //ANIMACIONES
 .slides-animadas {
@@ -382,8 +409,6 @@ ul {
 }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
   @include flexbox(row, center, flex-end);
   .contenido-slider {
     background: rgb(241, 241, 241);
@@ -412,13 +437,19 @@ ul {
   }
 }
 .slide-01 {
-  background: red;
+  background: url("../images/main-slider-bg/sydney-opera-house-363244_1280.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .slide-02 {
-  background: blue;
+  background: url("../images/main-slider-bg/house-1477041_1280.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .slide-03 {
-  background: green;
+  background: url("../images/main-slider-bg/pexels-expect-best-323780\ \(1\).jpg");
+  background-position: center;
+  background-size: cover;
 }
 .swiper-pagination-bullet {
   width: 10px !important;
@@ -487,8 +518,25 @@ ul {
   margin-bottom: 20px;
   position: relative;
   background: white;
-  .swiper-slide {
-    border: 1px solid black;
+  .swiper-slide:nth-child(1) {
+    background: url("../images/swiper-contenido-principal/pexels-max-vakhtbovych-6238607.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide:nth-child(2) {
+    background: url("../images/swiper-contenido-principal/pexels-max-vakhtbovych-6934183.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide:nth-child(3) {
+    background: url("../images/swiper-contenido-principal/pexels-maria-orlova-4906408.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide:nth-child(4) {
+    background: url("../images/swiper-contenido-principal/pexels-max-vakhtbovych-6957079.jpg");
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -594,7 +642,41 @@ ul {
   margin: 0 auto;
   .swiper-slide {
     height: 85%;
-    background: red; //ACA VA LA IMAGEN
+  }
+  .bg-00 {
+    background: url("../images/swiper-proyectos/pexels-jonathan-borba-5563469.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-01 {
+    background: url("../images/swiper-proyectos/pexels-louis-2083465.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-02 {
+    background: url("../images/swiper-proyectos/pexels-maria-orlova-4946903.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-03 {
+    background: url("../images/swiper-proyectos/pexels-paul-weaver-4117984.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-04 {
+    background: url("../images/swiper-proyectos/pexels-max-vakhtbovych-6316066.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-05 {
+    background: url("../images/swiper-proyectos/pexels-max-vakhtbovych-6587830.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-06 {
+    background: url("../images/swiper-proyectos/pexels-wendy-wei-3564358.jpg");
+    background-position: center;
+    background-size: cover;
   }
   .titulos-cartas-pag-sec {
     max-width: 250px;
@@ -705,6 +787,37 @@ ul {
   .swiper-button-next {
     margin-left: 50px;
     margin-right: auto;
+  }
+  .swiper-slide:nth-child(1) {
+    background: url("../images/swiper-nosotros/pexels-chait-goli-1797117.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide:nth-child(2) {
+    background: url("../images/swiper-nosotros/pexels-burst-374122.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide:nth-child(3) {
+    background: url("../images/swiper-nosotros/pexels-chris-panas-2467651.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide:nth-child(4) {
+    background: url("../images/swiper-nosotros/pexels-sevenstorm-juhaszimrus-443373.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide:nth-child(5) {
+    background: url("../images/swiper-nosotros/pexels-sevenstorm-juhaszimrus-443380.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide:nth-child(6) {
+    background: url("../images/swiper-nosotros/pexels-sevenstorm-juhaszimrus-575378.jpg");
+    background-position: center;
+    background-size: cover;
   }
   .slide-nosotros-animada {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.815));
@@ -821,23 +934,25 @@ ul {
   .after-swiper-nosotros:after {
     content: "";
     position: absolute;
-    left: -0px;
-    bottom: -0px;
+    left: 0px;
+    bottom: 0px;
     width: 100%;
     height: 100%;
     background: black;
     z-index: -1;
-    border-right: 20px solid black;
-    border-top: 20px solid black;
+    border-right: 20px solid white;
+    border-top: 20px solid white;
   }
   .after-swiper-nosotros::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: aqua;
-    left: 70px;
-    bottom: 70px;
+    background: url("../images/swiper-nosotros/pexels-daria-shevtsova-3626590.jpg");
+    background-size: cover;
+    background-position: center;
+    left: 60px;
+    bottom: 60px;
     margin-left: auto;
     margin-right: 0;
     z-index: -2;
@@ -899,7 +1014,9 @@ ul {
     height: 85vw;
     min-height: 300px;
     max-height: 400px;
-    background: white;
+    background: url("../images/equipo/pexels-artem-podrez-8518693.jpg");
+    background-position: center;
+    background-size: cover;
   }
   .nombre-persona-principal {
     margin: 30px 0px;
@@ -928,7 +1045,6 @@ ul {
 }
 .contenido-equipo {
   position: relative;
-
   padding: 15px 15px;
   display: grid;
   grid-template-columns: 1;
@@ -961,6 +1077,26 @@ ul {
     min-height: 280px;
     max-height: 340px;
     background: red;
+  }
+  .img-persona-01 {
+    background: url("../images/equipo/pexels-anthony-shkraba-7163352.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-persona-02 {
+    background: url("../images/equipo/pexels-anthony-shkraba-7163348.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-persona-03 {
+    background: url("../images/equipo/pexels-anthony-shkraba-7163383.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-persona-04 {
+    background: url("../images/equipo/pexels-anthony-shkraba-7163381.jpg");
+    background-position: center;
+    background-size: cover;
   }
   .nombre-persona {
     margin: 15px 0 5px;
@@ -1459,32 +1595,6 @@ ul {
     .logo-f {
       margin: 0 auto;
     }
-  }
-}
-.btn-flotante-inicio {
-  width: 40px;
-  height: 40px;
-  background: rgb(0, 0, 0);
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 9999;
-  color: white;
-  @include flexbox(row, center, center);
-  .fas {
-    animation: movimiento_flecha 1s infinite;
-    position: absolute;
-  }
-}
-@keyframes movimiento_flecha {
-  0% {
-    top: 10px;
-  }
-  50% {
-    top: 15px;
-  }
-  100% {
-    top: 10px;
   }
 }
 
