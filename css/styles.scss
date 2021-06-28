@@ -1393,7 +1393,7 @@ ul {
       display: grid;
       grid-template-columns: 40% 60%;
       grid-template-rows: 180px;
-      padding: 50px 60px;
+      padding: 50px 60px 0px;
       max-width: 1240px;
       margin: 0 auto;
     }
@@ -1409,6 +1409,8 @@ ul {
   text-transform: capitalize;
   font-style: italic;
   font-size: 0.813rem;
+  max-width: 1440px;
+  margin: 0 auto;
   .logo-footer {
     width: 150px;
     height: 60px;
@@ -1450,10 +1452,12 @@ ul {
     .logo-footer,
     .copy,
     .links-footer {
-      flex: 0 33%;
+      flex: 1;
       margin-left: 20px;
       margin-right: 20px;
-      max-width: 380px;
+    }
+    .logo-f {
+      margin: 0 auto;
     }
   }
 }

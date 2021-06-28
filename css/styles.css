@@ -1813,7 +1813,7 @@ ul {
         grid-template-columns: 40% 60%;
     -ms-grid-rows: 180px;
         grid-template-rows: 180px;
-    padding: 50px 60px;
+    padding: 50px 60px 0px;
     max-width: 1240px;
     margin: 0 auto;
   }
@@ -1827,6 +1827,8 @@ ul {
   text-transform: capitalize;
   font-style: italic;
   font-size: 0.813rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .footer-principal .logo-footer {
@@ -1910,12 +1912,14 @@ ul {
   .footer-principal .logo-footer,
   .footer-principal .copy,
   .footer-principal .links-footer {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 33%;
-            flex: 0 33%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin-left: 20px;
     margin-right: 20px;
-    max-width: 380px;
+  }
+  .footer-principal .logo-f {
+    margin: 0 auto;
   }
 }
 
