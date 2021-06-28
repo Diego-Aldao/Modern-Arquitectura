@@ -1070,9 +1070,9 @@ ul {
   }
   .btn-principal {
     margin-bottom: 0px;
-    padding: 0;
-    background: none;
+    padding: 10px 10px;
     letter-spacing: 3px;
+    height: auto;
   }
   .fecha {
     position: absolute;
@@ -1233,6 +1233,14 @@ ul {
     }
     .numeros-animados-js {
       flex-direction: column;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .datos {
+    .numeros-animados-js {
+      @include flexbox(row, space-between, center);
+      min-width: 500px;
     }
   }
 }

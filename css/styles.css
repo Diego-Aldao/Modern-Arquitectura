@@ -1399,9 +1399,9 @@ ul {
 
 .carta-blog-grande .btn-principal {
   margin-bottom: 0px;
-  padding: 0;
-  background: none;
+  padding: 10px 10px;
   letter-spacing: 3px;
+  height: auto;
 }
 
 .carta-blog-grande .fecha {
@@ -1612,6 +1612,25 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (min-width: 1240px) {
+  .datos .numeros-animados-js {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 500px;
   }
 }
 
