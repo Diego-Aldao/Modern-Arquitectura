@@ -456,9 +456,21 @@ ul {
 
 .nav-principal .logo {
   width: 40%;
-  max-width: 116px;
   height: 70%;
-  border: 1px solid black;
+  max-width: 116px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-principal .contenido-nav-principal {
@@ -2097,7 +2109,6 @@ ul {
 .footer-principal .logo-f {
   width: 150px;
   height: 60px;
-  background: red;
 }
 
 .footer-principal .copy {

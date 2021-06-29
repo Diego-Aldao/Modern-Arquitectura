@@ -336,9 +336,9 @@ ul {
   top: 0;
   .logo {
     width: 40%;
-    max-width: 116px;
     height: 70%;
-    border: 1px solid black;
+    max-width: 116px;
+    @include flexbox(row, center, center);
   }
   .contenido-nav-principal {
     width: calc(100% - 116px);
@@ -1610,7 +1610,6 @@ ul {
   .logo-f {
     width: 150px;
     height: 60px;
-    background: red;
   }
   .copy {
     text-align: center;
