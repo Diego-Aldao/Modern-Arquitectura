@@ -1530,7 +1530,9 @@ ul {
   height: 280px;
   margin-bottom: 40px;
   color: white;
-  background: red;
+  background: url("../images/blog-pag-principal/pexels-joanna-bogacz-4138152.jpg");
+  background-position: center;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1544,6 +1546,7 @@ ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
 }
 
 .carta-blog .contenido-carta {
@@ -1555,6 +1558,7 @@ ul {
   margin-bottom: 30px;
   margin-left: 20px;
   background: black;
+  z-index: 2;
 }
 
 .carta-blog .fecha {
@@ -1572,6 +1576,12 @@ ul {
 .carta-blog .titulo-carta-blog {
   text-transform: uppercase;
   font-size: 1.25rem;
+}
+
+.carta-blog-02 {
+  background: url("../images/blog-pag-principal/pexels-ksenia-chernaya-3952034.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .carta-blog-grande {
@@ -1593,7 +1603,10 @@ ul {
       -ms-flex-align: end;
           align-items: flex-end;
   color: white;
-  background: red;
+  background: url("../images/blog-pag-principal/pexels-sebastian-sørensen-731082.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .carta-blog-grande .contenido-carta-grande {
@@ -1603,6 +1616,7 @@ ul {
   padding: 15px;
   margin-right: 15px;
   border: 15px solid black;
+  z-index: 2;
 }
 
 .carta-blog-grande .titulo-carta-blog {
@@ -1634,6 +1648,17 @@ ul {
   text-transform: uppercase;
   font-weight: 900;
   color: white;
+}
+
+.carta-blog:after,
+.carta-blog-grande:after {
+  content: "";
+  background: rgba(0, 0, 0, 0.425);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 @media (min-width: 1024px) {
