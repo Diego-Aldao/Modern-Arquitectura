@@ -1365,9 +1365,9 @@ ul {
           align-items: center;
 }
 
-.carta-principal .links-redes {
+.links-redes {
   width: 35px;
-  height: 100%;
+  height: 35px;
   margin: 0 3px;
   border: 1px solid white;
   display: -webkit-box;
@@ -1395,7 +1395,6 @@ ul {
   -ms-grid-rows: (1fr)[4];
       grid-template-rows: repeat(4, 1fr);
   row-gap: 30px;
-  color: red;
 }
 
 .contenido-equipo .carta-equipo {
@@ -1404,8 +1403,8 @@ ul {
   max-width: 300px;
   padding-bottom: 20px;
   margin: auto;
-  background: aqua;
   text-align: center;
+  background: white;
 }
 
 .contenido-equipo .carta-equipo::after {
@@ -1424,7 +1423,33 @@ ul {
   height: 85vw;
   min-height: 280px;
   max-height: 340px;
-  background: red;
+  position: relative;
+}
+
+.contenido-equipo .img-persona .redes-persona {
+  background: rgba(0, 0, 0, 0.473);
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+.contenido-equipo .img-persona .links-redes {
+  background: white;
+  color: black;
 }
 
 .contenido-equipo .img-persona-01 {

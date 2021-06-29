@@ -139,3 +139,22 @@ var swiper = new Swiper('.swiper-container-seis', {
   });
    
  });
+
+ const redesPersona = document.querySelectorAll(".redes-persona");
+
+ redesPersona.forEach(slide => {
+  slide.addEventListener("mouseenter", () =>{
+    gsap.to(slide, {
+      opacity: 1,
+      duration: 0.3,
+    });
+  });
+
+  slide.addEventListener("mouseleave", () =>{
+    gsap.to(slide, {
+      opacity: 0,
+      duration: 0.3,
+    });
+  });
+   
+ });
