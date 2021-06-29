@@ -2314,9 +2314,11 @@ ul {
   width: 100%;
   height: 70px;
   @include flexbox(row, space-between, center);
+  padding-left: 20px;
   .logo-desplegable {
     width: 120px;
     height: 100%;
+    @include flexbox(row, center, center);
   }
   .btn-cerrar {
     width: 70px;

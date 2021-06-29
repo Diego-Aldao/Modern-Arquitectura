@@ -121,8 +121,9 @@ var swiper = new Swiper('.swiper-container-seis', {
 
 
   //ANIMACIONES GSAP
-  const slidesAnimadas = document.querySelectorAll(".slides-animadas");
 
+  //ANIMACIONES PROYECTOS
+  const slidesAnimadas = document.querySelectorAll(".slides-animadas");
  slidesAnimadas.forEach(slide => {
   slide.addEventListener("mouseenter", () =>{
     gsap.to(slide, {
@@ -140,8 +141,8 @@ var swiper = new Swiper('.swiper-container-seis', {
    
  });
 
+ //ANIMACIONES EQUIPO
  const redesPersona = document.querySelectorAll(".redes-persona");
-
  redesPersona.forEach(slide => {
   slide.addEventListener("mouseenter", () =>{
     gsap.to(slide, {
@@ -158,3 +159,36 @@ var swiper = new Swiper('.swiper-container-seis', {
   });
    
  });
+
+ //ANIMACIONES DESPLEGABLE
+ const btnAbrirDesplegable = document.querySelector(".menu-hamburguesa");
+ const menuDesplegable = document.querySelector(".menu-desplegable");
+ const btnCerrarDesplegable = document.querySelector(".btn-cerrar");
+ const lineaBtnUno = document.querySelector(".linea-btn-uno");
+ const lineaBtnDos = document.querySelector(".linea-btn-dos");
+
+
+ btnAbrirDesplegable.addEventListener("click", () => {
+   gsap.to(menuDesplegable, {
+     right: 0,
+   });
+   gsap.to(lineaBtnDos, {
+    transform: "rotate(45deg)",
+  });  
+  gsap.to(lineaBtnUno, {
+    transform: "rotate(-45deg)",
+  }); 
+ });
+
+ btnCerrarDesplegable.addEventListener("click", () => {
+  gsap.to(menuDesplegable, {
+    right: "-100%",
+    delay: 0.5,
+  });  
+    gsap.to(lineaBtnDos, {
+      transform: "rotate(-45deg)",
+    });  
+    gsap.to(lineaBtnUno, {
+      transform: "rotate(45deg)",
+    });  
+});
