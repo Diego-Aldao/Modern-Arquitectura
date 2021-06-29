@@ -1560,6 +1560,7 @@ ul {
   .swiper-slide {
     height: 120px;
     background: white;
+    @include flexbox(row, center, center);
   }
   .swiper-button-next,
   .swiper-button-prev {
