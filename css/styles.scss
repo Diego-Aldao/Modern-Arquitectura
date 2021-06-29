@@ -1462,9 +1462,38 @@ ul {
   .img-testimonio {
     width: 80px;
     height: 80px;
-    background: white;
-    border: 1px solid black;
   }
+  .img-testimonio-01 {
+    background: url("../images/testimonios/pexels-anastasia-shuraeva-5704720.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-testimonio-02 {
+    background: url("../images/testimonios/pexels-andrea-piacquadio-3767392.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-testimonio-03 {
+    background: url("../images/testimonios/pexels-andrea-piacquadio-3777943.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-testimonio-04 {
+    background: url("../images/testimonios/pexels-andrea-piacquadio-3789888.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-testimonio-05 {
+    background: url("../images/testimonios/pexels-mentatdgt-1024311.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-testimonio-06 {
+    background: url("../images/testimonios/pexels-mododeolhar-3474629.webp");
+    background-position: center;
+    background-size: cover;
+  }
+
   .contenido-carta-testimonio {
     width: 98%;
     padding: 40px 20px 30px;
@@ -1499,6 +1528,7 @@ ul {
     background: black;
   }
 }
+
 //QUERYS TESTIMONIOS
 @media (min-width: 1024px) {
   .testimonios {
