@@ -2576,8 +2576,8 @@ ul {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 125vw 55vw (125vw)[4] 40vw (125vw)[4] 40vw;
-      grid-template-rows: 125vw 55vw repeat(4, 125vw) 40vw repeat(4, 125vw) 40vw;
+  -ms-grid-rows: 125vw 55vw (125vw)[4] 55vw (125vw)[3] 55vw;
+      grid-template-rows: 125vw 55vw repeat(4, 125vw) 55vw repeat(3, 125vw) 55vw;
 }
 
 .contenido-trabajos .img-trabajos-grandes {
@@ -2585,9 +2585,75 @@ ul {
   margin: 15px;
 }
 
+.contenido-trabajos .img-trabajos-grandes:nth-child(1) {
+  background: url("../images/pag-sec-trabajos/pexels-berk-ozdemir-3779820.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido-trabajos .img-trabajos-grandes:nth-child(3) {
+  background: url("../images/pag-sec-trabajos/pexels-james-lee-2903952.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido-trabajos .img-trabajos-grandes:nth-child(4) {
+  background: url("../images/pag-sec-trabajos/pexels-jonathan-borba-5563469.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido-trabajos .img-trabajos-grandes:nth-child(5) {
+  background: url("../images/pag-sec-trabajos/pexels-julie-aagaard-2734622.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido-trabajos .img-trabajos-grandes:nth-child(6) {
+  background: url("../images/pag-sec-trabajos/pexels-maria-orlova-4946903.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido-trabajos .img-trabajos-grandes:nth-child(8) {
+  background: url("../images/pag-sec-trabajos/pexels-paul-weaver-4117984.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido-trabajos .img-trabajos-grandes:nth-child(9) {
+  background: url("../images/pag-sec-trabajos/pexels-vlada-karpovich-7903178.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido-trabajos .img-trabajos-grandes:nth-child(10) {
+  background: url("../images/pag-sec-trabajos/pexels-daria-shevtsova-1030974.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 .contenido-trabajos .img-trabajos-pequeños {
   background: blue;
   margin: 15px;
+}
+
+.contenido-trabajos .img-trabajos-pequeños:nth-child(2) {
+  background: url("../images/pag-sec-trabajos/pexels-burst-374612.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido-trabajos .img-trabajos-pequeños:nth-child(7) {
+  background: url("../images/pag-sec-trabajos/pexels-sevenstorm-juhaszimrus-443378.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido-trabajos .img-trabajos-pequeños:nth-child(11) {
+  background: url("../images/pag-sec-trabajos/pexels-adriaan-greyling-764830.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .contenido-trabajos .textos-comunes {

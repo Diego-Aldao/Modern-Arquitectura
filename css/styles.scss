@@ -1943,16 +1943,71 @@ ul {
     max-width: 600px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 125vw 55vw repeat(4, 125vw) 40vw repeat(4, 125vw) 40vw;
+    grid-template-rows: 125vw 55vw repeat(4, 125vw) 55vw repeat(3, 125vw) 55vw;
   }
   .img-trabajos-grandes {
     background: red;
     margin: 15px;
     //USO MARGIN EN VEZ DE GAP EN EL GRID, PORQUE LO SUMA AL TOTAL DEL TAMAÑO DE LOS DIVS Y QUEDA DESFASADO
   }
+  .img-trabajos-grandes:nth-child(1) {
+    background: url("../images/pag-sec-trabajos/pexels-berk-ozdemir-3779820.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-trabajos-grandes:nth-child(3) {
+    background: url("../images/pag-sec-trabajos/pexels-james-lee-2903952.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-trabajos-grandes:nth-child(4) {
+    background: url("../images/pag-sec-trabajos/pexels-jonathan-borba-5563469.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-trabajos-grandes:nth-child(5) {
+    background: url("../images/pag-sec-trabajos/pexels-julie-aagaard-2734622.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-trabajos-grandes:nth-child(6) {
+    background: url("../images/pag-sec-trabajos/pexels-maria-orlova-4946903.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-trabajos-grandes:nth-child(8) {
+    background: url("../images/pag-sec-trabajos/pexels-paul-weaver-4117984.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-trabajos-grandes:nth-child(9) {
+    background: url("../images/pag-sec-trabajos/pexels-vlada-karpovich-7903178.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-trabajos-grandes:nth-child(10) {
+    background: url("../images/pag-sec-trabajos/pexels-daria-shevtsova-1030974.jpg");
+    background-position: center;
+    background-size: cover;
+  }
   .img-trabajos-pequeños {
     background: blue;
     margin: 15px;
+  }
+  .img-trabajos-pequeños:nth-child(2) {
+    background: url("../images/pag-sec-trabajos/pexels-burst-374612.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-trabajos-pequeños:nth-child(7) {
+    background: url("../images/pag-sec-trabajos/pexels-sevenstorm-juhaszimrus-443378.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-trabajos-pequeños:nth-child(11) {
+    background: url("../images/pag-sec-trabajos/pexels-adriaan-greyling-764830.jpg");
+    background-position: center;
+    background-size: cover;
   }
   .textos-comunes {
     font-size: clamp(0.7rem, 4vw, 1.5rem);
