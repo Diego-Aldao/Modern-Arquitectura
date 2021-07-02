@@ -1608,12 +1608,10 @@ ul {
 
 //FOOTER
 .footer-principal {
-  padding-bottom: 80px;
   text-transform: capitalize;
   font-style: italic;
   font-size: 0.813rem;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
   .logo-footer {
     width: 150px;
     height: 60px;
@@ -1628,6 +1626,7 @@ ul {
   }
   .info-footer {
     @include flexbox(column, center, center);
+    margin-bottom: 30px;
   }
   .links-footer {
     position: relative;
@@ -1650,7 +1649,12 @@ ul {
 //QUERYSS FOOTER
 @media (min-width: 1024px) {
   .footer-principal {
-    @include flexbox(row, center, center);
+    .contenedor-gral {
+      @include flexbox(row, center, center);
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 60px 0px;
+    }
     .logo-footer,
     .copy,
     .links-footer {
@@ -1660,6 +1664,14 @@ ul {
     }
     .logo-f {
       margin: 0 auto;
+    }
+    .info-footer {
+      margin-bottom: 0px;
+    }
+  }
+  .footer-pag-sec {
+    .contenedor-gral {
+      max-width: 1140px;
     }
   }
 }
@@ -1722,7 +1734,7 @@ ul {
     width: 230px;
     margin: 25px auto 0;
     position: relative;
-    z-index: 2; 
+    z-index: 2;
   }
   .li-header-pag-sec {
     padding: 0 10px 0px 0px;

@@ -2117,12 +2117,10 @@ ul {
 }
 
 .footer-principal {
-  padding-bottom: 80px;
   text-transform: capitalize;
   font-style: italic;
   font-size: 0.813rem;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .footer-principal .logo-footer {
@@ -2154,6 +2152,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 
 .footer-principal .links-footer {
@@ -2187,7 +2186,7 @@ ul {
 }
 
 @media (min-width: 1024px) {
-  .footer-principal {
+  .footer-principal .contenedor-gral {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2201,6 +2200,9 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 0px;
   }
   .footer-principal .logo-footer,
   .footer-principal .copy,
@@ -2213,6 +2215,12 @@ ul {
   }
   .footer-principal .logo-f {
     margin: 0 auto;
+  }
+  .footer-principal .info-footer {
+    margin-bottom: 0px;
+  }
+  .footer-pag-sec .contenedor-gral {
+    max-width: 1140px;
   }
 }
 
