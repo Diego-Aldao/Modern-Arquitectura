@@ -2220,7 +2220,10 @@ ul {
   padding-top: 50px;
   padding-bottom: 20px;
   margin-top: 70px;
-  background: black;
+  background: url("../images/pexels-vecislavas-popa-1643383.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .header-paginas-secundarias .contenedor-gral-pag-sec {
@@ -2238,6 +2241,7 @@ ul {
   padding: 60px 0px 60px 25px;
   border: 10px solid white;
   border-right: none;
+  z-index: 2;
 }
 
 .header-paginas-secundarias .contenido-header-pag-sec:after {
@@ -2286,6 +2290,8 @@ ul {
           align-items: center;
   width: 230px;
   margin: 25px auto 0;
+  position: relative;
+  z-index: 2;
 }
 
 .header-paginas-secundarias .li-header-pag-sec {
@@ -2298,6 +2304,16 @@ ul {
 
 .header-paginas-secundarias .li-header-pag-sec i {
   margin-left: 5px;
+}
+
+.header-paginas-secundarias::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.616);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .contenedor-gral-pag-sec {
@@ -2364,7 +2380,42 @@ ul {
   height: 60vw;
   max-height: 447px;
   width: 100%;
-  background: black;
+}
+
+.cartas-noticias .img-not-01 {
+  background: url("../images/pag-sec-noticias/pexels-brett-sayles-6548287.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cartas-noticias .img-not-02 {
+  background: url("../images/pag-sec-noticias/pexels-pixabay-271795.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cartas-noticias .img-not-03 {
+  background: url("../images/pag-sec-noticias/pexels-pixabay-276528.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cartas-noticias .img-not-04 {
+  background: url("../images/pag-sec-noticias/pexels-sevenstorm-juhaszimrus-934591.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cartas-noticias .img-not-05 {
+  background: url("../images/pag-sec-noticias/pexels-timur-saglambilek-87223.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cartas-noticias .img-not-06 {
+  background: url("../images/pag-sec-noticias/pexels-vlada-karpovich-4451937.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .cartas-noticias .contenido-cartas-noticias {
