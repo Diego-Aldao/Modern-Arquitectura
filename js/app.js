@@ -192,3 +192,24 @@ var swiper = new Swiper('.swiper-container-seis', {
       transform: "rotate(45deg)",
     });  
 });
+
+//CONTADOR
+function animarValor(obj, inicio, final, duracion) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progreso = Math.min((timestamp - startTimestamp) / duracion, 1);
+    obj.innerHTML = Math.floor(progreso * (final - inicio) + inicio);
+    if (progreso < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const clientes = document.querySelector(".clientes");
+animarValor(clientes, 0, 250, 1000);
+const trabajos = document.querySelector(".trabajos");
+animarValor(trabajos, 0, 75, 1000);
+const dias = document.querySelector(".dias");
+animarValor(dias, 0, 3250, 1000);

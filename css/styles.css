@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -55,6 +56,10 @@ img {
   .contenedor-gral-dos {
     max-width: 1440px;
   }
+}
+
+.bg-puntos {
+  background: url("../images/ptn-1.png");
 }
 
 .oculto {
@@ -226,6 +231,7 @@ ul {
   font-weight: 600;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
+  cursor: pointer;
 }
 
 .btn-principal .linea-boton {
@@ -273,7 +279,7 @@ ul {
   color: white;
 }
 
-.btn-flotante-inicio {
+.flecha-flotante {
   width: 40px;
   height: 40px;
   background: black;
@@ -295,9 +301,10 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
-.btn-flotante-inicio .fas {
+.flecha-flotante .fas {
   -webkit-animation: movimiento_flecha 1s infinite;
           animation: movimiento_flecha 1s infinite;
   position: absolute;
@@ -373,6 +380,13 @@ ul {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   border-left: 3px solid white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.slides-animadas .flotante-slides-animadas:hover {
+  background: white;
+  color: black;
 }
 
 .slides-animadas::after {
@@ -903,6 +917,7 @@ ul {
   font-weight: 600;
   position: relative;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .filtro-proyectos .item-proyectos:nth-child(1) {
@@ -920,6 +935,7 @@ ul {
 
 .swiper-container-tres .swiper-slide {
   height: 85%;
+  cursor: pointer;
 }
 
 .swiper-container-tres .bg-00 {
@@ -1068,12 +1084,7 @@ ul {
   }
 }
 
-.nosotros {
-  background: url("../images/ptn-1.png");
-}
-
 .swiper-container-cuatro {
-  background: red;
   height: 100%;
   overflow: hidden;
 }
@@ -1133,6 +1144,7 @@ ul {
   top: 100%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .swiper-container-cuatro .contenido-slide-nosotros-animada {
@@ -1391,6 +1403,11 @@ ul {
           align-items: center;
 }
 
+.carta-principal .links-redes:hover {
+  background: white;
+  color: black;
+}
+
 .links-redes {
   width: 35px;
   height: 35px;
@@ -1409,6 +1426,9 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
 .contenido-equipo {
@@ -1476,6 +1496,11 @@ ul {
 .contenido-equipo .img-persona .links-redes {
   background: white;
   color: black;
+}
+
+.contenido-equipo .img-persona .links-redes:hover {
+  background: black;
+  color: white;
 }
 
 .contenido-equipo .img-persona-01 {
@@ -1610,6 +1635,7 @@ ul {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
+  cursor: pointer;
 }
 
 .carta-blog .contenido-carta {
@@ -1622,6 +1648,8 @@ ul {
   margin-left: 20px;
   background: black;
   z-index: 2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .carta-blog .fecha {
@@ -1639,6 +1667,10 @@ ul {
 .carta-blog .titulo-carta-blog {
   text-transform: uppercase;
   font-size: 1.25rem;
+}
+
+.carta-blog:hover .contenido-carta {
+  max-width: 450px;
 }
 
 .carta-blog-02 {
@@ -1670,6 +1702,7 @@ ul {
   background-position: center;
   background-size: cover;
   position: relative;
+  cursor: pointer;
 }
 
 .carta-blog-grande .contenido-carta-grande {
@@ -1680,6 +1713,8 @@ ul {
   margin-right: 15px;
   border: 15px solid black;
   z-index: 2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .carta-blog-grande .titulo-carta-blog {
@@ -1711,6 +1746,10 @@ ul {
   text-transform: uppercase;
   font-weight: 900;
   color: white;
+}
+
+.carta-blog-grande:hover .contenido-carta-grande {
+  background: black;
 }
 
 .carta-blog:after,
@@ -1943,10 +1982,6 @@ ul {
   }
 }
 
-.testimonios {
-  background: url("../images/ptn-1.png");
-}
-
 .swiper-container-cinco {
   position: relative;
   width: 100%;
@@ -2030,6 +2065,9 @@ ul {
   background: white;
   -webkit-box-shadow: 5px 5px 5px #e4e4e4;
           box-shadow: 5px 5px 5px #e4e4e4;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .carta-testimonio .nombre-persona-testimonio {
@@ -2062,6 +2100,11 @@ ul {
   width: 40px;
   height: 30px;
   background: black;
+}
+
+.carta-testimonio:hover .contenido-carta-testimonio {
+  background: black;
+  color: white;
 }
 
 @media (min-width: 1024px) {
@@ -2106,6 +2149,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .swiper-container-seis .swiper-button-next,
@@ -2199,6 +2243,9 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .footer-principal .links-footer::after {
@@ -2209,6 +2256,17 @@ ul {
   width: 2px;
   height: 100%;
   background: black;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-principal .links-footer:hover {
+  color: white;
+}
+
+.footer-principal .links-footer:hover:after {
+  width: 100%;
 }
 
 @media (min-width: 1024px) {

@@ -27,6 +27,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: $fuente-principal;
+  scroll-behavior: smooth;
 }
 a {
   color: inherit;
@@ -60,6 +61,10 @@ img {
   .contenedor-gral-dos {
     max-width: 1440px;
   }
+}
+
+.bg-puntos {
+  background: url("../images/ptn-1.png");
 }
 
 .oculto {
@@ -183,6 +188,7 @@ ul {
   border: 2px solid black;
   font-weight: 600;
   transition: all 0.6s;
+  cursor: pointer;
   .linea-boton {
     transition: all 0.6s;
     background: white;
@@ -215,7 +221,7 @@ ul {
     color: white;
   }
 }
-.btn-flotante-inicio {
+.flecha-flotante {
   width: 40px;
   height: 40px;
   background: rgb(0, 0, 0);
@@ -225,6 +231,7 @@ ul {
   z-index: 9999;
   color: white;
   @include flexbox(row, center, center);
+  cursor: pointer;
   .fas {
     animation: movimiento_flecha 1s infinite;
     position: absolute;
@@ -272,6 +279,11 @@ ul {
     letter-spacing: 4px;
     transform: rotate(-90deg);
     border-left: 3px solid rgb(255, 255, 255);
+    transition: all 0.2s;
+  }
+  .flotante-slides-animadas:hover {
+    background: white;
+    color: black;
   }
 }
 .slides-animadas::after {
@@ -654,6 +666,7 @@ ul {
     font-weight: 600;
     position: relative;
     margin-bottom: 10px;
+    cursor: pointer;
   }
   .item-proyectos:nth-child(1) {
     color: #d5dd02;
@@ -668,6 +681,7 @@ ul {
   margin: 0 auto;
   .swiper-slide {
     height: 85%;
+    cursor: pointer;
   }
   .bg-00 {
     background: url("../images/swiper-proyectos/pexels-jonathan-borba-5563469.jpg");
@@ -799,11 +813,7 @@ ul {
 }
 
 //NOSOTROS
-.nosotros {
-  background: url("../images/ptn-1.png");
-}
 .swiper-container-cuatro {
-  background: red;
   height: 100%;
   overflow: hidden;
   .btn-nav-swiper {
@@ -852,6 +862,7 @@ ul {
     position: relative;
     top: 100%;
     transition: all 0.3s;
+    cursor: pointer;
   }
   .contenido-slide-nosotros-animada {
     width: 100%;
@@ -1061,6 +1072,10 @@ ul {
     height: 35px;
     @include flexbox(row, center, center);
   }
+  .links-redes:hover {
+    background: white;
+    color: black;
+  }
 }
 .links-redes {
   width: 35px;
@@ -1068,6 +1083,8 @@ ul {
   margin: 0 3px;
   border: 1px solid white;
   @include flexbox(row, center, center);
+  transition: all 0.2s;
+  cursor: pointer;
 }
 .contenido-equipo {
   position: relative;
@@ -1114,6 +1131,10 @@ ul {
     .links-redes {
       background: white;
       color: black;
+    }
+    .links-redes:hover {
+      background: black;
+      color: white;
     }
   }
   .img-persona-01 {
@@ -1223,6 +1244,8 @@ ul {
   background-size: cover;
   @include flexbox(row, flex-start, flex-end);
   position: relative;
+  cursor: pointer;
+
   .contenido-carta {
     position: relative;
     width: 90%;
@@ -1233,6 +1256,7 @@ ul {
     margin-left: 20px;
     background: black;
     z-index: 2;
+    transition: all 0.3s;
   }
   .fecha {
     position: absolute;
@@ -1247,6 +1271,11 @@ ul {
   .titulo-carta-blog {
     text-transform: uppercase;
     font-size: 1.25rem;
+  }
+}
+.carta-blog:hover {
+  .contenido-carta {
+    max-width: 450px;
   }
 }
 .carta-blog-02 {
@@ -1266,6 +1295,7 @@ ul {
   background-position: center;
   background-size: cover;
   position: relative;
+  cursor: pointer;
   .contenido-carta-grande {
     position: relative;
     width: 80%;
@@ -1274,6 +1304,7 @@ ul {
     margin-right: 15px;
     border: 15px solid rgb(0, 0, 0);
     z-index: 2;
+    transition: all 0.3s;
   }
   .titulo-carta-blog {
     max-width: 350px;
@@ -1300,6 +1331,11 @@ ul {
     text-transform: uppercase;
     font-weight: 900;
     color: white;
+  }
+}
+.carta-blog-grande:hover {
+  .contenido-carta-grande {
+    background: black;
   }
 }
 .carta-blog:after,
@@ -1474,9 +1510,6 @@ ul {
 }
 
 //TESTIMONIOS
-.testimonios {
-  background: url("../images/ptn-1.png");
-}
 .swiper-container-cinco {
   position: relative;
   width: 100%;
@@ -1493,6 +1526,7 @@ ul {
     border-radius: 0;
   }
 }
+
 .carta-testimonio {
   position: relative;
   padding: 3px 0px 0px 3px;
@@ -1537,6 +1571,8 @@ ul {
     padding: 40px 20px 30px;
     background: white;
     box-shadow: 5px 5px 5px rgb(228, 228, 228);
+    transition: all 0.3s;
+    cursor: pointer;
   }
   .nombre-persona-testimonio {
     text-transform: uppercase;
@@ -1566,7 +1602,12 @@ ul {
     background: black;
   }
 }
-
+.carta-testimonio:hover {
+  .contenido-carta-testimonio {
+    background: black;
+    color: white;
+  }
+}
 //QUERYS TESTIMONIOS
 @media (min-width: 1024px) {
   .testimonios {
@@ -1599,6 +1640,7 @@ ul {
     height: 120px;
     background: white;
     @include flexbox(row, center, center);
+    cursor: pointer;
   }
   .swiper-button-next,
   .swiper-button-prev {
@@ -1660,6 +1702,8 @@ ul {
     padding: 5px 10px;
     margin: 20px 0px 10px;
     @include flexbox(row, center, center);
+    cursor: pointer;
+    transition: all 0.3s;
     &::after {
       content: "";
       position: absolute;
@@ -1668,6 +1712,14 @@ ul {
       width: 2px;
       height: 100%;
       background: black;
+      z-index: -1;
+      transition: all 0.3s;
+    }
+  }
+  .links-footer:hover {
+    color: white;
+    &:after {
+      width: 100%;
     }
   }
 }
