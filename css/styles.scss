@@ -189,6 +189,7 @@ ul {
   font-weight: 600;
   transition: all 0.6s;
   cursor: pointer;
+  position: relative;
   .linea-boton {
     transition: all 0.6s;
     background: white;
@@ -1680,6 +1681,7 @@ ul {
   font-style: italic;
   font-size: 0.813rem;
   width: 100%;
+  position: relative;
   .logo-footer {
     width: 150px;
     height: 60px;
@@ -1704,6 +1706,7 @@ ul {
     @include flexbox(row, center, center);
     cursor: pointer;
     transition: all 0.3s;
+    z-index: 1;
     &::after {
       content: "";
       position: absolute;
@@ -1838,6 +1841,24 @@ ul {
   max-width: 1140px;
   margin: 0 auto;
   padding: 100px 15px;
+  .titulos-principales {
+    margin-bottom: 100px;
+  }
+}
+.contenido-pag-sec {
+  position: relative;
+  overflow: hidden;
+  .forma-bg:before {
+    left: -800px;
+    top: -350px;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    content: "";
+    border: 40px solid rgba(191, 191, 191, 0.1);
+    transform: rotate(45deg);
+    z-index: -1;
+  }
 }
 
 .footer-pag-sec {
@@ -1891,11 +1912,30 @@ ul {
   margin: 0 auto 40px;
   border: 1px solid rgb(228, 228, 228);
   background: rgb(250, 250, 250);
+  cursor: pointer;
   .img-cartas-noticias {
     height: 60vw;
     max-height: 447px;
     width: 100%;
+    position: relative;
+    overflow: hidden;
   }
+  .flotante-noticias {
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 5px 7px;
+    overflow: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+    i {
+      margin: 0px 5px;
+    }
+  }
+
   .img-not-01 {
     background: url("../images/pag-sec-noticias/pexels-brett-sayles-6548287.jpg");
     background-position: center;
@@ -1957,6 +1997,33 @@ ul {
     background: none;
     color: black;
   }
+  .btn-principal:hover {
+    background: black;
+    color: white;
+  }
+}
+.cartas-noticias:nth-child(even) {
+  .flotante-noticias {
+    right: 10px;
+  }
+}
+.cartas-noticias:nth-child(odd) {
+  .flotante-noticias {
+    left: 10px;
+  }
+}
+.cartas-noticias:nth-child(odd):hover {
+  .flotante-noticias {
+    left: 20px;
+    opacity: 1;
+  }
+}
+
+.cartas-noticias:nth-child(even):hover {
+  .flotante-noticias {
+    right: 20px;
+    opacity: 1;
+  }
 }
 
 .nav-noticias {
@@ -1971,6 +2038,12 @@ ul {
     border: 1px solid rgb(221, 221, 221);
     font-size: 0.75rem;
     font-weight: 500;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .links-nav-noticias:hover {
+    background: black;
+    color: white;
   }
 }
 
