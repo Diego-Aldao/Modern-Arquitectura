@@ -3288,7 +3288,7 @@ ul {
 }
 
 .contenido-blog .carta-comentarios {
-  margin-top: 50px;
+  margin: 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3302,6 +3302,17 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  position: relative;
+}
+
+.contenido-blog .carta-comentarios::after {
+  content: "";
+  background: #cccccc;
+  width: 80%;
+  height: 2px;
+  bottom: 0px;
+  left: 10%;
+  position: absolute;
 }
 
 .contenido-blog .img-user-comentarios {
@@ -3514,6 +3525,12 @@ ul {
   }
   .contenido-blog #correo {
     margin: 20px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenido-blog .carta-comentarios {
+    margin: 50px 50px;
   }
 }
 

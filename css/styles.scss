@@ -2476,8 +2476,18 @@ ul {
     margin-right: 50px;
   }
   .carta-comentarios {
-    margin-top: 50px;
+    margin: 50px 0px;
     @include flexbox(row, center, flex-start);
+    position: relative;
+  }
+  .carta-comentarios::after {
+    content: "";
+    background: rgb(204, 204, 204);
+    width: 80%;
+    height: 2px;
+    bottom: 0px;
+    left: 10%;
+    position: absolute;
   }
   .img-user-comentarios {
     width: 50px;
@@ -2639,6 +2649,13 @@ ul {
     }
     #correo {
       margin: 20px auto;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .contenido-blog {
+    .carta-comentarios {
+      margin: 50px 50px;
     }
   }
 }
