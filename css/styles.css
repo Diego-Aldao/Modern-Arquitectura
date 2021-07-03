@@ -2417,8 +2417,12 @@ ul {
   padding: 100px 15px;
 }
 
-.contenedor-gral-pag-sec .titulos-principales {
+.contenedor-gral-pag-sec .header-secciones {
   margin-bottom: 100px;
+}
+
+.contenedor-gral-pag-sec .titulos-principales {
+  margin-bottom: 0px;
 }
 
 .contenido-pag-sec {
@@ -2731,6 +2735,16 @@ ul {
   }
 }
 
+.contenido-trabajos .header-secciones {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px 30px 0px;
+}
+
+.contenido-trabajos .titulos-principales {
+  margin-bottom: 0px;
+}
+
 .contenido-trabajos .contenedor-gral-pag-sec {
   max-width: 600px;
   display: -ms-grid;
@@ -2834,12 +2848,16 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .contenido-trabajos .header-secciones {
+    max-width: 1440px;
+    padding: 100px 75px 0px;
+  }
   .contenido-trabajos .contenedor-gral-pag-sec {
     max-width: 1440px;
     -ms-grid-columns: (50%)[2];
         grid-template-columns: repeat(2, 50%);
-    -ms-grid-rows: (300px)[11];
-        grid-template-rows: repeat(11, 300px);
+    -ms-grid-rows: (300px)[10];
+        grid-template-rows: repeat(10, 300px);
   }
   .contenido-trabajos .img-trabajos-grandes:nth-child(1) {
     -ms-grid-row: 1;
@@ -2880,21 +2898,19 @@ ul {
     grid-row: 7 / 9;
   }
   .contenido-trabajos .img-trabajos-grandes:nth-child(10) {
-    -ms-grid-row: 10;
-    -ms-grid-row-span: 2;
-    grid-row: 10 / 12;
-  }
-  .contenido-trabajos .img-trabajos-grandes:nth-child(11) {
-    -ms-grid-row: 9;
-    -ms-grid-row-span: 2;
-    grid-row: 9 / 11;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 2;
+    grid-row: 9 / 11;
   }
 }
 
 @media (min-width: 1024px) {
+  .contenido-trabajos .header-secciones {
+    padding: 100px 25px 0px;
+  }
   .contenido-trabajos .contenedor-gral-pag-sec {
     padding: 100px 10px;
     -ms-grid-columns: (25%)[4];
@@ -2902,11 +2918,10 @@ ul {
     -ms-grid-rows: (150px)[9];
         grid-template-rows: repeat(9, 150px);
   }
-  .contenido-trabajos .img-trabajos-grandes {
-    margin: 15px;
-  }
+  .contenido-trabajos .img-trabajos-grandes,
   .contenido-trabajos .img-trabajos-pequeños {
     margin: 15px;
+    cursor: pointer;
   }
   .contenido-trabajos .img-trabajos-grandes:nth-child(1) {
     -ms-grid-column: 1;
