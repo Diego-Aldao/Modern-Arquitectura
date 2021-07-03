@@ -2327,6 +2327,14 @@ ul {
   background-size: cover;
 }
 .contenido-blog {
+  .header-secciones {
+    max-width: 1140px;
+    padding: 100px 15px 0px;
+    margin: 0 auto;
+  }
+  .titulos-principales {
+    margin: 0px;
+  }
   .contenedor-gral-pag-sec {
     padding-bottom: 0px;
   }
@@ -2363,6 +2371,12 @@ ul {
     padding: 8px 13px;
     background: rgb(240, 240, 240);
     letter-spacing: 0px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .links-tags:hover {
+    background: black;
+    color: white;
   }
   .compartir {
     position: relative;
@@ -2393,6 +2407,12 @@ ul {
     color: rgb(124, 124, 124);
     font-size: 16px;
     border: 1px solid rgb(204, 204, 204);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .links-compartir:hover {
+    background: black;
+    color: white;
   }
   .swiper-blog-post-relacionados {
     position: relative;
@@ -2520,6 +2540,9 @@ ul {
 //querys contenido principal
 @media (min-width: 768px) {
   .contenido-blog {
+    .header-secciones {
+      padding: 100px 60px 0px;
+    }
     .contenido-blog-principal {
       position: relative;
       display: grid;
@@ -2564,6 +2587,13 @@ ul {
   .swiper-blog-principal {
     max-width: 100%;
     max-height: 350px;
+  }
+}
+@media (min-width: 1300px) {
+  .contenido-blog {
+    .header-secciones {
+      padding: 100px 0px 0px;
+    }
   }
 }
 
