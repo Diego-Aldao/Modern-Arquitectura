@@ -817,9 +817,6 @@ ul {
   .swiper-container-dos {
     height: 100%;
   }
-  .swiper-container-dos .swiper-slide {
-    background: white;
-  }
   .after-swiper {
     margin-bottom: 150px;
     width: 85%;
@@ -1320,7 +1317,6 @@ ul {
     bottom: 0px;
     width: 100%;
     height: 100%;
-    background: black;
     z-index: -1;
     border-right: 20px solid white;
     border-top: 20px solid white;
@@ -2441,7 +2437,7 @@ ul {
   padding-top: 50px;
   padding-bottom: 20px;
   margin-top: 70px;
-  background: url("../images/pexels-vecislavas-popa-1643383.jpg");
+  background: url("../images/img-header-sec-movil.webp");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -2575,6 +2571,11 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .header-paginas-secundarias {
+    background: url("../images/img-header-sec-desk.webp");
+    background-size: cover;
+    background-position: center;
+  }
   .header-paginas-secundarias .titulo-pag-sec {
     position: relative;
     width: 650px;
@@ -2651,37 +2652,37 @@ ul {
 }
 
 .cartas-noticias .img-not-01 {
-  background: url("../images/pag-sec-noticias/pexels-brett-sayles-6548287.jpg");
+  background: url("../images/pag-sec-noticias/img-noticias-01.webp");
   background-position: center;
   background-size: cover;
 }
 
 .cartas-noticias .img-not-02 {
-  background: url("../images/pag-sec-noticias/pexels-pixabay-271795.jpg");
+  background: url("../images/pag-sec-noticias/img-noticias-02.webp");
   background-position: center;
   background-size: cover;
 }
 
 .cartas-noticias .img-not-03 {
-  background: url("../images/pag-sec-noticias/pexels-pixabay-276528.jpg");
+  background: url("../images/pag-sec-noticias/img-noticias-03.webp");
   background-position: center;
   background-size: cover;
 }
 
 .cartas-noticias .img-not-04 {
-  background: url("../images/pag-sec-noticias/pexels-sevenstorm-juhaszimrus-934591.jpg");
+  background: url("../images/pag-sec-noticias/img-noticias-04.webp");
   background-position: center;
   background-size: cover;
 }
 
 .cartas-noticias .img-not-05 {
-  background: url("../images/pag-sec-noticias/pexels-timur-saglambilek-87223.jpg");
+  background: url("../images/pag-sec-noticias/img-noticias-05.webp");
   background-position: center;
   background-size: cover;
 }
 
 .cartas-noticias .img-not-06 {
-  background: url("../images/pag-sec-noticias/pexels-vlada-karpovich-4451937.jpg");
+  background: url("../images/pag-sec-noticias/img-noticias-06.webp");
   background-position: center;
   background-size: cover;
 }
@@ -2803,6 +2804,39 @@ ul {
 .nav-noticias .links-nav-noticias:hover {
   background: black;
   color: white;
+}
+
+@media (min-width: 500px) {
+  .cartas-noticias .img-not-01 {
+    background: url("../images/pag-sec-noticias/img-noticias-01-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .cartas-noticias .img-not-02 {
+    background: url("../images/pag-sec-noticias/img-noticias-02-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .cartas-noticias .img-not-03 {
+    background: url("../images/pag-sec-noticias/img-noticias-03-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .cartas-noticias .img-not-04 {
+    background: url("../images/pag-sec-noticias/img-noticias-04-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .cartas-noticias .img-not-05 {
+    background: url("../images/pag-sec-noticias/img-noticias-05-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .cartas-noticias .img-not-06 {
+    background: url("../images/pag-sec-noticias/img-noticias-06-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 1024px) {
