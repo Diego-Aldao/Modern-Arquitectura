@@ -3366,7 +3366,6 @@ ul {
 .contenido-blog .img-post-relacionados {
   width: 100%;
   height: 55vw;
-  background: red;
 }
 
 .contenido-blog .img-rela-01 {
@@ -3805,6 +3804,10 @@ ul {
   width: 100%;
   height: 40px;
   margin: 10px 0px;
+  position: relative;
+}
+
+.lista-desplegable a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3819,6 +3822,18 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.lista-desplegable .links-desplegables:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0px;
+  height: 100%;
+  background: black;
 }
 
 .lista-desplegable .texto-desplegable {
@@ -3841,6 +3856,8 @@ ul {
   text-transform: uppercase;
   font-size: 1.4rem;
   color: black;
+  position: relative;
+  z-index: 2;
 }
 
 .lista-desplegable .font-a {
@@ -3860,6 +3877,17 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.links-desplegables:hover:after {
+  width: 100%;
+}
+
+.links-desplegables:hover .texto-desplegable,
+.links-desplegables:hover .font-a {
+  color: white;
 }
 
 .footer-desplegable {
