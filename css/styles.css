@@ -676,19 +676,19 @@ ul {
 }
 
 .slide-01 {
-  background: url("../images/main-slider-bg/sydney-opera-house-363244_1280.jpg");
+  background: url("../images/main-slider-bg/main-bg-01-movil.webp");
   background-position: center;
   background-size: cover;
 }
 
 .slide-02 {
-  background: url("../images/main-slider-bg/house-1477041_1280.jpg");
+  background: url("../images/main-slider-bg/bg-main-02-movil.webp");
   background-position: center;
   background-size: cover;
 }
 
 .slide-03 {
-  background: url("../images/main-slider-bg/pexels-expect-best-323780 (1).jpg");
+  background: url("../images/main-slider-bg/main-bg-03-movil.webp");
   background-position: center;
   background-size: cover;
 }
@@ -742,6 +742,21 @@ ul {
   .swiper-slide .mini-texto {
     font-size: clamp(0.875rem, 1.1vw, 1rem);
   }
+  .slide-01 {
+    background: url("../images/main-slider-bg/main-bg-01-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .slide-02 {
+    background: url("../images/main-slider-bg/main-bg-02-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .slide-03 {
+    background: url("../images/main-slider-bg/main-bg-03-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -771,25 +786,25 @@ ul {
 }
 
 .swiper-container-dos .swiper-slide:nth-child(1) {
-  background: url("../images/swiper-contenido-principal/pexels-max-vakhtbovych-6238607.jpg");
+  background: url("../images/swiper-contenido-principal/img-contenido-01.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-dos .swiper-slide:nth-child(2) {
-  background: url("../images/swiper-contenido-principal/pexels-max-vakhtbovych-6934183.jpg");
+  background: url("../images/swiper-contenido-principal/img-contenido-02.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-dos .swiper-slide:nth-child(3) {
-  background: url("../images/swiper-contenido-principal/pexels-maria-orlova-4906408.jpg");
+  background: url("../images/swiper-contenido-principal/img-contenido-03.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-dos .swiper-slide:nth-child(4) {
-  background: url("../images/swiper-contenido-principal/pexels-max-vakhtbovych-6957079.jpg");
+  background: url("../images/swiper-contenido-principal/img-contenido-04.webp");
   background-position: center;
   background-size: cover;
 }
@@ -940,43 +955,43 @@ ul {
 }
 
 .swiper-container-tres .bg-00 {
-  background: url("../images/swiper-proyectos/pexels-jonathan-borba-5563469.jpg");
+  background: url("../images/swiper-proyectos/img-proyectos-01.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-tres .bg-01 {
-  background: url("../images/swiper-proyectos/pexels-louis-2083465.jpg");
+  background: url("../images/swiper-proyectos/img-proyectos-02.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-tres .bg-02 {
-  background: url("../images/swiper-proyectos/pexels-maria-orlova-4946903.jpg");
+  background: url("../images/swiper-proyectos/img-proyectos-03.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-tres .bg-03 {
-  background: url("../images/swiper-proyectos/pexels-paul-weaver-4117984.jpg");
+  background: url("../images/swiper-proyectos/img-proyectos-04.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-tres .bg-04 {
-  background: url("../images/swiper-proyectos/pexels-max-vakhtbovych-6316066.jpg");
+  background: url("../images/swiper-proyectos/img-proyectos-05.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-tres .bg-05 {
-  background: url("../images/swiper-proyectos/pexels-max-vakhtbovych-6587830.jpg");
+  background: url("../images/swiper-proyectos/img-proyectos-06.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-tres .bg-06 {
-  background: url("../images/swiper-proyectos/pexels-wendy-wei-3564358.jpg");
+  background: url("../images/swiper-proyectos/img-proyectos-07.webp");
   background-position: center;
   background-size: cover;
 }
@@ -1101,37 +1116,37 @@ ul {
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(1) {
-  background: url("../images/swiper-nosotros/pexels-chait-goli-1797117.jpg");
+  background: url("../images/swiper-nosotros/img-nosotros-01-movil.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(2) {
-  background: url("../images/swiper-nosotros/pexels-burst-374122.jpg");
+  background: url("../images/swiper-nosotros/img-nosotros-02-movil.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(3) {
-  background: url("../images/swiper-nosotros/pexels-chris-panas-2467651.jpg");
+  background: url("../images/swiper-nosotros/img-nosotros-03-movil.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(4) {
-  background: url("../images/swiper-nosotros/pexels-sevenstorm-juhaszimrus-443373.jpg");
+  background: url("../images/swiper-nosotros/img-nosotros-04-movil.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(5) {
-  background: url("../images/swiper-nosotros/pexels-sevenstorm-juhaszimrus-443380.jpg");
+  background: url("../images/swiper-nosotros/img-nosotros-05-movil.webp");
   background-position: center;
   background-size: cover;
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(6) {
-  background: url("../images/swiper-nosotros/pexels-sevenstorm-juhaszimrus-575378.jpg");
+  background: url("../images/swiper-nosotros/img-nosotros-06-movil.webp");
   background-position: center;
   background-size: cover;
 }
@@ -1264,6 +1279,36 @@ ul {
 }
 
 @media (min-width: 620px) {
+  .swiper-container-cuatro .swiper-slide:nth-child(1) {
+    background: url("../images/swiper-nosotros/img-nosotros-01-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(2) {
+    background: url("../images/swiper-nosotros/img-nosotros-02-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(3) {
+    background: url("../images/swiper-nosotros/img-nosotros-03-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(4) {
+    background: url("../images/swiper-nosotros/img-nosotros-04-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(5) {
+    background: url("../images/swiper-nosotros/img-nosotros-05-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(6) {
+    background: url("../images/swiper-nosotros/img-nosotros-06-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
   .after-swiper-nosotros {
     width: 85%;
     margin: 120px auto 80px 0px;
@@ -1285,7 +1330,7 @@ ul {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("../images/swiper-nosotros/pexels-daria-shevtsova-3626590.jpg");
+    background: url("../images/swiper-nosotros/img-nosotros-after-desk.webp");
     background-size: cover;
     background-position: center;
     left: 60px;
@@ -1313,10 +1358,45 @@ ul {
     overflow: hidden;
     margin: 0 auto;
   }
+  .swiper-container-cuatro .swiper-slide:nth-child(1) {
+    background: url("../images/swiper-nosotros/img-nosotros-01-movil.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(2) {
+    background: url("../images/swiper-nosotros/img-nosotros-02-movil.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(3) {
+    background: url("../images/swiper-nosotros/img-nosotros-03-movil.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(4) {
+    background: url("../images/swiper-nosotros/img-nosotros-04-movil.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(5) {
+    background: url("../images/swiper-nosotros/img-nosotros-05-movil.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(6) {
+    background: url("../images/swiper-nosotros/img-nosotros-06-movil.webp");
+    background-position: center;
+    background-size: cover;
+  }
   .after-swiper-nosotros {
     width: 80%;
     height: 30vw;
     margin: 50px auto 150px;
+  }
+  .after-swiper-nosotros::before {
+    background: url("../images/swiper-nosotros/img-nosotros-after.webp");
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -1344,6 +1424,49 @@ ul {
   }
 }
 
+@media (min-width: 1440px) {
+  .swiper-container-cuatro .swiper-slide:nth-child(1) {
+    background: url("../images/swiper-nosotros/img-nosotros-01-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(1) {
+    background: url("../images/swiper-nosotros/img-nosotros-01-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(2) {
+    background: url("../images/swiper-nosotros/img-nosotros-02-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(3) {
+    background: url("../images/swiper-nosotros/img-nosotros-03-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(4) {
+    background: url("../images/swiper-nosotros/img-nosotros-04-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(5) {
+    background: url("../images/swiper-nosotros/img-nosotros-05-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-container-cuatro .swiper-slide:nth-child(6) {
+    background: url("../images/swiper-nosotros/img-nosotros-06-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .after-swiper-nosotros::before {
+    background: url("../images/swiper-nosotros/img-nosotros-after-desk.webp");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 .equipo {
   position: relative;
   z-index: 0;
@@ -1367,7 +1490,7 @@ ul {
   height: 85vw;
   min-height: 300px;
   max-height: 400px;
-  background: url("../images/equipo/pexels-artem-podrez-8518693.jpg");
+  background: url("../images/equipo/img-equipo-01-movil.webp");
   background-position: center;
   background-size: cover;
 }
@@ -1505,25 +1628,25 @@ ul {
 }
 
 .contenido-equipo .img-persona-01 {
-  background: url("../images/equipo/pexels-anthony-shkraba-7163352.jpg");
+  background: url("../images/equipo/img-equipo-02.webp");
   background-position: center;
   background-size: cover;
 }
 
 .contenido-equipo .img-persona-02 {
-  background: url("../images/equipo/pexels-anthony-shkraba-7163348.jpg");
+  background: url("../images/equipo/img-equipo-03.webp");
   background-position: center;
   background-size: cover;
 }
 
 .contenido-equipo .img-persona-03 {
-  background: url("../images/equipo/pexels-anthony-shkraba-7163383.jpg");
+  background: url("../images/equipo/img-equipo-04.webp");
   background-position: center;
   background-size: cover;
 }
 
 .contenido-equipo .img-persona-04 {
-  background: url("../images/equipo/pexels-anthony-shkraba-7163381.jpg");
+  background: url("../images/equipo/img-equipo-05.webp");
   background-position: center;
   background-size: cover;
 }
@@ -1584,6 +1707,9 @@ ul {
   .carta-principal .imagen-persona-principal {
     height: 55vw;
     max-height: 650px;
+    background: url("../images/equipo/img-equipo-01-desk.webp");
+    background-size: cover;
+    background-position: center;
   }
   .contenido-equipo {
     padding: 225px 60px 215px 15px;
@@ -1619,7 +1745,7 @@ ul {
   height: 280px;
   margin-bottom: 40px;
   color: white;
-  background: url("../images/blog-pag-principal/pexels-joanna-bogacz-4138152.jpg");
+  background: url("../images/blog-pag-principal/img-blog-01.webp");
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -1675,7 +1801,7 @@ ul {
 }
 
 .carta-blog-02 {
-  background: url("../images/blog-pag-principal/pexels-ksenia-chernaya-3952034.jpg");
+  background: url("../images/blog-pag-principal/img-blog-02.webp");
   background-position: center;
   background-size: cover;
 }
@@ -1699,7 +1825,7 @@ ul {
       -ms-flex-align: end;
           align-items: flex-end;
   color: white;
-  background: url("../images/blog-pag-principal/pexels-sebastian-sørensen-731082.jpg");
+  background: url("../images/blog-pag-principal/img-blog-03.webp");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -2025,37 +2151,37 @@ ul {
 }
 
 .carta-testimonio .img-testimonio-01 {
-  background: url("../images/testimonios/pexels-anastasia-shuraeva-5704720.webp");
+  background: url("../images/testimonios/img-testimonio-01.webp");
   background-position: center;
   background-size: cover;
 }
 
 .carta-testimonio .img-testimonio-02 {
-  background: url("../images/testimonios/pexels-andrea-piacquadio-3767392.webp");
+  background: url("../images/testimonios/img-testimonio-02.webp");
   background-position: center;
   background-size: cover;
 }
 
 .carta-testimonio .img-testimonio-03 {
-  background: url("../images/testimonios/pexels-andrea-piacquadio-3777943.webp");
+  background: url("../images/testimonios/img-testimonio-03.webp");
   background-position: center;
   background-size: cover;
 }
 
 .carta-testimonio .img-testimonio-04 {
-  background: url("../images/testimonios/pexels-andrea-piacquadio-3789888.webp");
+  background: url("../images/testimonios/img-testimonio-04.webp");
   background-position: center;
   background-size: cover;
 }
 
 .carta-testimonio .img-testimonio-05 {
-  background: url("../images/testimonios/pexels-mentatdgt-1024311.webp");
+  background: url("../images/testimonios/img-testimonio-05.webp");
   background-position: center;
   background-size: cover;
 }
 
 .carta-testimonio .img-testimonio-06 {
-  background: url("../images/testimonios/pexels-mododeolhar-3474629.webp");
+  background: url("../images/testimonios/img-testimonio-06.webp");
   background-position: center;
   background-size: cover;
 }
