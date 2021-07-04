@@ -2276,7 +2276,7 @@ ul {
   .img-trabajos-grandes,
   .img-trabajos-pequeños {
     margin: 15px;
-    //USO MARGIN EN VEZ DE GAP EN EL GRID, PORQUE LO SUMA AL TOTAL DEL TAMAÑO DE LOS DIVS Y QUEDA DESFASADO
+    //USO MARGIN EN VEZ DE GAP EN EL GRID, PORQUE ESTE ULTIMO LO SUMA AL TOTAL DEL TAMAÑO DE LOS DIVS Y QUEDA DESFASADO
   }
   .img-trabajos-grandes:nth-child(1) {
     background: url("../images/pag-sec-trabajos/img-pag-sec-proyectos-01.webp");
@@ -2474,17 +2474,17 @@ ul {
   grid-column: 1 / 3;
 }
 .slide-blog-01 {
-  background: url("../images/pag-sec-blog/swiper-principal/pexels-pixabay-276528.jpg");
+  background: url("../images/pag-sec-blog/swiper-principal/img-pag-sec-blog-01.webp");
   background-position: center;
   background-size: cover;
 }
 .slide-blog-02 {
-  background: url("../images/pag-sec-blog/swiper-principal/pexels-max-vakhtbovych-6957079.jpg");
+  background: url("../images/pag-sec-blog/swiper-principal/img-pag-sec-blog-02.webp");
   background-position: center;
   background-size: cover;
 }
 .slide-blog-03 {
-  background: url("../images/pag-sec-blog/swiper-principal/pexels-max-vakhtbovych-6934183.jpg");
+  background: url("../images/pag-sec-blog/swiper-principal/img-pag-sec-blog-03.webp");
   background-position: center;
   background-size: cover;
 }
@@ -2589,17 +2589,17 @@ ul {
     background: red;
   }
   .img-rela-01 {
-    background: url("../images/pag-sec-blog/post-relacionados/pexels-pixabay-271795.jpg");
+    background: url("../images/pag-sec-blog/post-relacionados/img-pag-sec-rela-01.webp");
     background-position: center;
     background-size: cover;
   }
   .img-rela-02 {
-    background: url("../images/pag-sec-blog/post-relacionados/pexels-vecislavas-popa-1571460.jpg");
+    background: url("../images/pag-sec-blog/post-relacionados/img-pag-sec-rel-02.webp");
     background-position: center;
     background-size: cover;
   }
   .img-rela-03 {
-    background: url("../images/pag-sec-blog/post-relacionados/pexels-houzlook-com-3797991.jpg");
+    background: url("../images/pag-sec-blog/post-relacionados/img-pag-sec-rel-03.webp");
     background-position: center;
     background-size: cover;
   }
