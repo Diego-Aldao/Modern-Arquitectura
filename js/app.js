@@ -4,7 +4,7 @@ var swiper = new Swiper('.swiper-container', {
     loop:true,
     speed: 1000,
     autoplay: {
-        delay: 5000,
+        delay: 115000,
         disableOnInteraction: true,
     },
     pagination: {
@@ -208,8 +208,40 @@ function animarValor(obj, inicio, final, duracion) {
 }
 
 const clientes = document.querySelector(".clientes");
-animarValor(clientes, 0, 250, 1000);
+animarValor(clientes, 0, 250, 15000);
 const trabajos = document.querySelector(".trabajos");
-animarValor(trabajos, 0, 75, 1000);
+animarValor(trabajos, 0, 75, 15000);
 const dias = document.querySelector(".dias");
-animarValor(dias, 0, 3250, 1000);
+animarValor(dias, 0, 3250, 15000);
+
+//API INTESERCTION OBSERVER
+const crearObservador = (animacion, nuevaClase) => {
+  const secciones = document.querySelectorAll(animacion);
+
+  const options = {
+    root: null, //es el default, todo el viewport
+    threshold: 0.3, // 0 dispara en el momento que el elemento entra al observador, 1 dispara cuando todo el elemento ya esta dentro del observador
+  };
+
+  const observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      } //si no esta en la pantalla, termina la funcion
+      entry.target.classList.add(nuevaClase);
+
+      observer.unobserve(entry.target); //para que las animaciones solo se ejecuten la primera vez que se entra en la seccion.
+    });
+  }, options);
+  secciones.forEach((section) => {
+    observer.observe(section); //al usar querySelectorAll tengo un array con las secciones, y lo que quiero lograr es observar uno por uno
+  });
+};
+
+crearObservador(".animacion-uno", "final-uno");
+crearObservador(".animacion-dos", "final-dos");
+crearObservador(".animacion-tres", "final-tres");
+crearObservador(".animacion-cuatro", "final-cuatro");
+crearObservador(".animacion-cinco", "final-cinco");
+crearObservador(".animacion-seis", "final-seis");
+crearObservador(".animacion-siete", "final-siete");

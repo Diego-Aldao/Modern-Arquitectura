@@ -80,6 +80,9 @@ ul {
   font-weight: 300;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  max-width: 200px;
 }
 
 .pie-seccion {
@@ -135,6 +138,7 @@ ul {
 
 .titulos-after {
   font-size: clamp(1.625rem, 4vw, 2.25rem);
+  max-width: 380px;
 }
 
 .titulos-after:after {
@@ -436,16 +440,16 @@ ul {
 }
 
 .forma-bg:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
   right: -800px;
   bottom: -350px;
   width: 800px;
   height: 800px;
-  position: absolute;
-  content: "";
   border: 40px solid rgba(191, 191, 191, 0.1);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  z-index: -1;
 }
 
 .nav-principal {
@@ -646,12 +650,30 @@ ul {
           align-items: flex-end;
 }
 
+.swiper-slide .contenido-slider-animado {
+  opacity: 0;
+  color: #f1f1f1;
+}
+
 .swiper-slide .contenido-slider {
   background: #f1f1f1;
   padding: 40px 20px 60px;
   width: 70%;
   max-width: 940px;
   margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -661,6 +683,8 @@ ul {
   letter-spacing: 1px;
   font-size: clamp(0.75rem, 2vw, 1.125rem);
   margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
 }
 
 .swiper-slide .mini-sub {
@@ -669,10 +693,14 @@ ul {
   line-height: 1.2;
   margin-bottom: 20px;
   font-weight: 300;
+  position: relative;
+  overflow: hidden;
 }
 
 .swiper-slide .mini-texto {
   font-size: clamp(0.688rem, 2vw, 1rem);
+  position: relative;
+  overflow: hidden;
 }
 
 .slide-01 {
@@ -952,45 +980,31 @@ ul {
 }
 
 .swiper-container-tres .bg-00 {
-  background: url("../images/swiper-proyectos/img-proyectos-01.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-proyectos/img-proyectos-01.webp") center/cover;
 }
 
 .swiper-container-tres .bg-01 {
-  background: url("../images/swiper-proyectos/img-proyectos-02.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-proyectos/img-proyectos-02.webp") center/cover;
 }
 
 .swiper-container-tres .bg-02 {
-  background: url("../images/swiper-proyectos/img-proyectos-03.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-proyectos/img-proyectos-03.webp") center/cover;
 }
 
 .swiper-container-tres .bg-03 {
-  background: url("../images/swiper-proyectos/img-proyectos-04.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-proyectos/img-proyectos-04.webp") center/cover;
 }
 
 .swiper-container-tres .bg-04 {
-  background: url("../images/swiper-proyectos/img-proyectos-05.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-proyectos/img-proyectos-05.webp") center/cover;
 }
 
 .swiper-container-tres .bg-05 {
-  background: url("../images/swiper-proyectos/img-proyectos-06.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-proyectos/img-proyectos-06.webp") center/cover;
 }
 
 .swiper-container-tres .bg-06 {
-  background: url("../images/swiper-proyectos/img-proyectos-07.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-proyectos/img-proyectos-07.webp") center/cover;
 }
 
 .swiper-container-tres .titulos-cartas-pag-sec {
@@ -1113,39 +1127,27 @@ ul {
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(1) {
-  background: url("../images/swiper-nosotros/img-nosotros-01-movil.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-nosotros/img-nosotros-01-movil.webp") center/cover;
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(2) {
-  background: url("../images/swiper-nosotros/img-nosotros-02-movil.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-nosotros/img-nosotros-02-movil.webp") center/cover;
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(3) {
-  background: url("../images/swiper-nosotros/img-nosotros-03-movil.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-nosotros/img-nosotros-03-movil.webp") center/cover;
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(4) {
-  background: url("../images/swiper-nosotros/img-nosotros-04-movil.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-nosotros/img-nosotros-04-movil.webp") center/cover;
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(5) {
-  background: url("../images/swiper-nosotros/img-nosotros-05-movil.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-nosotros/img-nosotros-05-movil.webp") center/cover;
 }
 
 .swiper-container-cuatro .swiper-slide:nth-child(6) {
-  background: url("../images/swiper-nosotros/img-nosotros-06-movil.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/swiper-nosotros/img-nosotros-06-movil.webp") center/cover;
 }
 
 .swiper-container-cuatro .slide-nosotros-animada {
@@ -1277,34 +1279,22 @@ ul {
 
 @media (min-width: 620px) {
   .swiper-container-cuatro .swiper-slide:nth-child(1) {
-    background: url("../images/swiper-nosotros/img-nosotros-01-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-01-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(2) {
-    background: url("../images/swiper-nosotros/img-nosotros-02-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-02-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(3) {
-    background: url("../images/swiper-nosotros/img-nosotros-03-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-03-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(4) {
-    background: url("../images/swiper-nosotros/img-nosotros-04-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-04-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(5) {
-    background: url("../images/swiper-nosotros/img-nosotros-05-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-05-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(6) {
-    background: url("../images/swiper-nosotros/img-nosotros-06-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-06-desk.webp") center/cover;
   }
   .after-swiper-nosotros {
     width: 85%;
@@ -1326,9 +1316,7 @@ ul {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("../images/swiper-nosotros/img-nosotros-after-desk.webp");
-    background-size: cover;
-    background-position: center;
+    background: url("../images/swiper-nosotros/img-nosotros-after-desk.webp") center/cover;
     left: 60px;
     bottom: 60px;
     margin-left: auto;
@@ -1355,34 +1343,22 @@ ul {
     margin: 0 auto;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(1) {
-    background: url("../images/swiper-nosotros/img-nosotros-01-movil.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-01-movil.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(2) {
-    background: url("../images/swiper-nosotros/img-nosotros-02-movil.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-02-movil.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(3) {
-    background: url("../images/swiper-nosotros/img-nosotros-03-movil.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-03-movil.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(4) {
-    background: url("../images/swiper-nosotros/img-nosotros-04-movil.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-04-movil.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(5) {
-    background: url("../images/swiper-nosotros/img-nosotros-05-movil.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-05-movil.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(6) {
-    background: url("../images/swiper-nosotros/img-nosotros-06-movil.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-06-movil.webp") center/cover;
   }
   .after-swiper-nosotros {
     width: 80%;
@@ -1390,9 +1366,7 @@ ul {
     margin: 50px auto 150px;
   }
   .after-swiper-nosotros::before {
-    background: url("../images/swiper-nosotros/img-nosotros-after.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-after.webp") center/cover;
   }
 }
 
@@ -1422,44 +1396,28 @@ ul {
 
 @media (min-width: 1440px) {
   .swiper-container-cuatro .swiper-slide:nth-child(1) {
-    background: url("../images/swiper-nosotros/img-nosotros-01-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-01-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(1) {
-    background: url("../images/swiper-nosotros/img-nosotros-01-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-01-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(2) {
-    background: url("../images/swiper-nosotros/img-nosotros-02-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-02-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(3) {
-    background: url("../images/swiper-nosotros/img-nosotros-03-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-03-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(4) {
-    background: url("../images/swiper-nosotros/img-nosotros-04-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-04-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(5) {
-    background: url("../images/swiper-nosotros/img-nosotros-05-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-05-desk.webp") center/cover;
   }
   .swiper-container-cuatro .swiper-slide:nth-child(6) {
-    background: url("../images/swiper-nosotros/img-nosotros-06-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-06-desk.webp") center/cover;
   }
   .after-swiper-nosotros::before {
-    background: url("../images/swiper-nosotros/img-nosotros-after-desk.webp");
-    background-position: center;
-    background-size: cover;
+    background: url("../images/swiper-nosotros/img-nosotros-after-desk.webp") center/cover;
   }
 }
 
@@ -1486,9 +1444,7 @@ ul {
   height: 85vw;
   min-height: 300px;
   max-height: 400px;
-  background: url("../images/equipo/img-equipo-01-movil.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/equipo/img-equipo-01-movil.webp") center/cover;
 }
 
 .carta-principal .nombre-persona-principal {
@@ -1624,27 +1580,19 @@ ul {
 }
 
 .contenido-equipo .img-persona-01 {
-  background: url("../images/equipo/img-equipo-02.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/equipo/img-equipo-02.webp") center/cover;
 }
 
 .contenido-equipo .img-persona-02 {
-  background: url("../images/equipo/img-equipo-03.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/equipo/img-equipo-03.webp") center/cover;
 }
 
 .contenido-equipo .img-persona-03 {
-  background: url("../images/equipo/img-equipo-04.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/equipo/img-equipo-04.webp") center/cover;
 }
 
 .contenido-equipo .img-persona-04 {
-  background: url("../images/equipo/img-equipo-05.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/equipo/img-equipo-05.webp") center/cover;
 }
 
 .contenido-equipo .nombre-persona {
@@ -1703,9 +1651,7 @@ ul {
   .carta-principal .imagen-persona-principal {
     height: 55vw;
     max-height: 650px;
-    background: url("../images/equipo/img-equipo-01-desk.webp");
-    background-size: cover;
-    background-position: center;
+    background: url("../images/equipo/img-equipo-01-desk.webp") center/cover;
   }
   .contenido-equipo {
     padding: 225px 60px 215px 15px;
@@ -1741,9 +1687,7 @@ ul {
   height: 280px;
   margin-bottom: 40px;
   color: white;
-  background: url("../images/blog-pag-principal/img-blog-01.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/blog-pag-principal/img-blog-01.webp") center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1797,9 +1741,7 @@ ul {
 }
 
 .carta-blog-02 {
-  background: url("../images/blog-pag-principal/img-blog-02.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/blog-pag-principal/img-blog-02.webp") center/cover;
 }
 
 .carta-blog-grande {
@@ -1821,9 +1763,7 @@ ul {
       -ms-flex-align: end;
           align-items: flex-end;
   color: white;
-  background: url("../images/blog-pag-principal/img-blog-03.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/blog-pag-principal/img-blog-03.webp") center/cover;
   position: relative;
   cursor: pointer;
 }
@@ -2147,39 +2087,27 @@ ul {
 }
 
 .carta-testimonio .img-testimonio-01 {
-  background: url("../images/testimonios/img-testimonio-01.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/testimonios/img-testimonio-01.webp") center/cover;
 }
 
 .carta-testimonio .img-testimonio-02 {
-  background: url("../images/testimonios/img-testimonio-02.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/testimonios/img-testimonio-02.webp") center/cover;
 }
 
 .carta-testimonio .img-testimonio-03 {
-  background: url("../images/testimonios/img-testimonio-03.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/testimonios/img-testimonio-03.webp") center/cover;
 }
 
 .carta-testimonio .img-testimonio-04 {
-  background: url("../images/testimonios/img-testimonio-04.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/testimonios/img-testimonio-04.webp") center/cover;
 }
 
 .carta-testimonio .img-testimonio-05 {
-  background: url("../images/testimonios/img-testimonio-05.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/testimonios/img-testimonio-05.webp") center/cover;
 }
 
 .carta-testimonio .img-testimonio-06 {
-  background: url("../images/testimonios/img-testimonio-06.webp");
-  background-position: center;
-  background-size: cover;
+  background: url("../images/testimonios/img-testimonio-06.webp") center/cover;
 }
 
 .carta-testimonio .contenido-carta-testimonio {
@@ -3903,5 +3831,121 @@ ul {
   .menu-desplegable {
     display: none;
   }
+}
+
+.animacion-uno,
+.animacion-dos,
+.animacion-tres {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 0px;
+  height: 100%;
+  background: white;
+}
+
+.final-uno {
+  -webkit-animation: movimiento 1s 0.5s forwards, movimiento2 1s 1.5s forwards;
+          animation: movimiento 1s 0.5s forwards, movimiento2 1s 1.5s forwards;
+}
+
+.final-dos {
+  -webkit-animation: movimiento 1s 0.7s forwards, movimiento2 1s 1.7s forwards;
+          animation: movimiento 1s 0.7s forwards, movimiento2 1s 1.7s forwards;
+}
+
+.final-tres {
+  -webkit-animation: movimiento 1s 0.9s forwards, movimiento2 1s 1.9s forwards;
+          animation: movimiento 1s 0.9s forwards, movimiento2 1s 1.9s forwards;
+}
+
+@-webkit-keyframes movimiento {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes movimiento {
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes movimiento2 {
+  100% {
+    left: 200%;
+  }
+}
+
+@keyframes movimiento2 {
+  100% {
+    left: 200%;
+  }
+}
+
+.swiper-slide .animacion-cuatro {
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  bottom: -10px;
+  position: absolute;
+}
+
+.swiper-slide .final-cuatro {
+  bottom: 0px;
+  opacity: 1;
+  -webkit-animation: colorFuente 0.1s 1.8s forwards;
+          animation: colorFuente 0.1s 1.8s forwards;
+}
+
+@-webkit-keyframes colorFuente {
+  100% {
+    color: black;
+  }
+}
+
+@keyframes colorFuente {
+  100% {
+    color: black;
+  }
+}
+
+.animacion-cinco {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  -webkit-transition: all 0.5s 0.2s;
+  transition: all 0.5s 0.2s;
+}
+
+.final-cinco {
+  width: 0px;
+}
+
+.animacion-seis,
+.animacion-siete {
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.animacion-seis {
+  left: 15px;
+  top: 15px;
+}
+
+.animacion-siete {
+  left: -15px;
+  top: -15px;
+}
+
+.final-seis,
+.final-siete {
+  left: 0px;
+  top: 0px;
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */
