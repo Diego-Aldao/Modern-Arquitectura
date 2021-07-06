@@ -1,4 +1,27 @@
 window.onload = () => {
+  //BARRRA SUPERIOR
+
+  const barraNavPrincipal = document.querySelector(".nav-principal");
+
+  const scrollearBarraSuperior = () => {
+    if (
+      document.body.scrollTop > 250 ||
+      document.documentElement.scrollTop > 250
+    ) {
+      gsap.to(barraNavPrincipal, {
+        top: "-150px",
+        opacity: 0,
+      });
+    } else {
+      gsap.to(barraNavPrincipal, {
+        top: "0px",
+        opacity: 1,
+      });
+    }
+  };
+  window.onscroll = () => {
+    scrollearBarraSuperior();
+  };
   //SWIPER HEADER PRINCIPAL
   var swiper = new Swiper(".swiper-container", {
     spaceBetween: 30,
